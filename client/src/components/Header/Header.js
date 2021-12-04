@@ -27,6 +27,12 @@ const Header = () => {
                                 <li>
                                     <Link to="/explore">Explore<span></span></Link>                               
                                 </li>
+                                <li>
+                                    <Link to="/login">Login<span></span></Link>                               
+                                </li>
+                                <li>
+                                    <Link to="/register">Register<span></span></Link>                               
+                                </li>
                             </ul>
                             <div className="menu_side_area">
                                 <Link to="/create" className="btn-main btn-wallet"><i className="icon_wallet_alt"></i><span>Create NFT</span></Link>
