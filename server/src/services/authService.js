@@ -10,7 +10,7 @@ exports.login = async ({ email, password }) => {
     }
 
     let isValid = await user.validatePassword(password);
-    
+
     if (!isValid) {
         throw new Error('Invalid email or password');
     }
@@ -18,14 +18,19 @@ exports.login = async ({ email, password }) => {
     // Creating JWT token. Might need additional infomation!
     let payload = {
         _id: user._id,
-        firstName: user.firstName,
-        lastName: user.lastName,
+        username: user.username,
         email: user.email,
     };
 
     let token = await jwt.sign(payload, JWT_SECRET);
 
-    return token;
+
+    return {
+        _id: user._id,
+        email: user.email,
+        username: user.username,
+        accessToken: token,
+    };
 }
 
 exports.register = (userData) => User.create(userData);

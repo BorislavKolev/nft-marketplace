@@ -4,9 +4,10 @@ const authService = require('../services/authService');
 
 router.post('/login', async (req, res) => {
     try {
-        let token = await authService.login({...req.body});
+        let authData = await authService.login({...req.body});
 
-        res.json({token: token});
+        console.log(authData)
+        res.json({ ...authData });
 
     } catch(err) {
 
