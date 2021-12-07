@@ -9,6 +9,7 @@ import Register from './components/Register';
 import Login from './components/Login';
 import Explore from './components/Explore';
 import Create from './components/Create';
+import Logout from './components/Logout';
 
 const initialAuthState = {
   _id: '',
@@ -23,8 +24,12 @@ function App() {
     setUser(authData);
   }
 
+  const logout = () => {
+    setUser(initialAuthState);
+  };
+
   return (
-    <AuthContext.Provider value={{user, login}}>
+    <AuthContext.Provider value={{user, login, logout}}>
     <div id="wrapper">
       <Header />
       <Routes>
@@ -33,6 +38,7 @@ function App() {
         <Route path="/explore" element={<Explore />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/logout" element={<Logout />} />
       </Routes>
 
       <Footer />

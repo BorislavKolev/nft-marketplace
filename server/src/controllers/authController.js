@@ -6,12 +6,11 @@ router.post('/login', async (req, res) => {
     try {
         let authData = await authService.login({...req.body});
 
-        console.log(authData)
         res.json({ ...authData });
 
     } catch(err) {
 
-        res.json({error: err.message});
+        res.status(401).json(`${err}`);
     }
 });
 
@@ -37,6 +36,11 @@ router.post('/register', async (req, res) => {
 
         res.json({error: err});
     }
+});
+
+
+router.post('/logout', async (req, res) => {
+    res.json({ok: true});
 });
 
 module.exports = router;
