@@ -14,12 +14,15 @@ export const login = async (email, password) => {
     if (res.ok) {
         return jsonResult;
     } else {
-        console.log("han")
         throw jsonResult.message;
     }
 };
 
-export const register = (username, email, password) => {
+export const register = (username, email, password, repassword) => {
+    if (password != repassword) {
+        throw new Error("Password and Repeat Password should match");
+    }
+
     return fetch(`${baseUrl}/auth/register`, {
         method: 'POST',
         headers: {

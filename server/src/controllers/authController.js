@@ -25,12 +25,12 @@ router.post('/register', async (req, res) => {
             balance: 100,
         });
    
-        let token = await authService.login({
+        let authData = await authService.login({
             email,
             password
         });
 
-        res.json({token: token});
+        res.json({ ...authData });
 
     } catch(err) {
 

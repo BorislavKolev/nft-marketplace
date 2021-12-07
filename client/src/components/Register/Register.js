@@ -1,4 +1,31 @@
+import { useContext } from 'react';
+import { useNavigate } from 'react-router';
+
+import * as authService from '../../services/authService';
+import { AuthContext } from '../../contexts/AuthContext';
+
+
 const Register = () => {
+    const navigate = useNavigate();
+    const { login } = useContext(AuthContext);
+
+    const registerSubmitHandler = (e) => {
+        e.preventDefault();
+
+        let { username, email, password, repassword } = Object.fromEntries(new FormData(e.currentTarget));
+
+        try {
+            authService.register(username, email, password, repassword)   
+            .then(authData => {
+                login(authData);
+                
+                navigate('/');
+            });
+        } catch (error) {
+            console.log(error.message);
+        }
+       
+    }
     return(
         <div class="no-bottom no-top" id="content">
         <div id="top"></div>
@@ -10,7 +37,6 @@ const Register = () => {
                             
                             <div class="col-md-12 text-center">
                                 <h1>Register</h1>
-                                <p>Anim pariatur cliche reprehenderit</p>
                             </div>
                             <div class="clearfix"></div>
                         </div>
@@ -24,18 +50,17 @@ const Register = () => {
                 <div class="row">
                     <div class="col-md-8 offset-md-2">
                         <h3>Don't have an account? Register now.</h3>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
                         
                         <div class="spacer-10"></div>
                         
-                        <form name="contactForm" id='contact_form' class="form-border" method="post" action='blank.php'>
+                        <form name="contactForm" id='contact_form' class="form-border"  method="POST" onSubmit={registerSubmitHandler}>
 
                             <div class="row">
 
                                 <div class="col-md-6">
                                     <div class="field-set">
-                                        <label>Name:</label>
-                                        <input type='text' name='name' id='name' class="form-control"/>
+                                        <label>Username:</label>
+                                        <input type='text' name='username' id='username' class="form-control"/>
                                     </div>
                                 </div>
 
@@ -44,21 +69,7 @@ const Register = () => {
                                         <label>Email Address:</label>
                                         <input type='text' name='email' id='email' class="form-control"/>
                                     </div>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <div class="field-set">
-                                        <label>Choose a Username:</label>
-                                        <input type='text' name='username' id='username' class="form-control"/>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <div class="field-set">
-                                        <label>Phone:</label>
-                                        <input type='text' name='phone' id='phone' class="form-control"/>
-                                    </div>
-                                </div>
+                                </div>                      
 
                                 <div class="col-md-6">
                                     <div class="field-set">
@@ -70,7 +81,7 @@ const Register = () => {
                                 <div class="col-md-6">
                                     <div class="field-set">
                                         <label>Re-enter Password:</label>
-                                        <input type='text' name='re-password' id='re-password' class="form-control"/>
+                                        <input type='text' name='repassword' id='repassword' class="form-control"/>
                                     </div>
                                 </div>
 
