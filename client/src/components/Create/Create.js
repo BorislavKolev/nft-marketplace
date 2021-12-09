@@ -1,12 +1,12 @@
 import { useNavigate } from 'react-router-dom';
-import * as petService from '../../services/nftService';
+import * as nftService from '../../services/nftService';
 import { useAuthContext } from '../../contexts/AuthContext';
 
 const Create = () => {
     const { user } = useAuthContext();
     const navigate = useNavigate();
 
-    const onPetCreate = (e) => {
+    const onNftCreate = (e) => {
         e.preventDefault();
         let formData = new FormData(e.currentTarget);
 
@@ -14,7 +14,7 @@ const Create = () => {
         let description = formData.get('description');
         let imageUrl = formData.get('imageUrl');
 
-        petService.create({
+        nftService.create({
             title,
             description,
             imageUrl,
@@ -50,7 +50,7 @@ const Create = () => {
                 <div className="container">
                     <div className="row wow fadeIn">
                         <div className="col-lg-10 offset-lg-1">
-                            <form id="form-create-item" className="form-border" method="post" action="email.php">
+                            <form id="form-create-item" className="form-border" method="POST" onSubmit={onNftCreate}>
                                 <div className="field-set">
 
 
@@ -70,6 +70,7 @@ const Create = () => {
 
                                     <div className="spacer-20"></div>
 
+                                    <input type="submit" id="submit" className="btn-main" value="Create Item"/>
                                 
 
                                 </div>

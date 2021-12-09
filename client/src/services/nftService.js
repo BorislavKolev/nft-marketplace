@@ -2,10 +2,10 @@ import { request } from './requester';
 
 const baseUrl = 'http://localhost:3030/nfts';
 
-export const getAll = () => request(`${baseUrl}/nfts`)
+export const getAll = () => request(`${baseUrl}/all`)
 
-export const create = async (nftData, token) => {
-    let response = await fetch(`${baseUrl}/nfts`, {
+export const create = async (nftData) => {
+    let response = await fetch(`${baseUrl}/create`, {
         method: 'POST',
         headers: {
             'content-type': 'application/json'

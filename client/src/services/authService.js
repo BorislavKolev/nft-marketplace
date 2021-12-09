@@ -19,7 +19,7 @@ export const login = async (email, password) => {
 };
 
 export const register = (username, email, password, repassword) => {
-    if (password != repassword) {
+    if (password !== repassword) {
         throw new Error("Password and Repeat Password should match");
     }
 

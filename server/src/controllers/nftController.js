@@ -8,7 +8,7 @@ router.post('/create', async (req, res) => {
     res.json({ok: true});
 });
 
-router.get('/', async (req, res) => {
+router.get('/all', async (req, res) => {
 
     res.json({ok: true});
 });

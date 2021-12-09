@@ -1,7 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 
 import { AuthProvider } from './contexts/AuthContext';
-import useLocalStorage from './hooks/useLocalStorage';
 import Header from './components/Header';
 import Home from './components/Home';
 import Footer from './components/Footer';
