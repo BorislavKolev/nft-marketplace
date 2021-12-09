@@ -16,20 +16,20 @@ let nftSchema = new mongoose.Schema({
     forSale: {
         type: Boolean,
     },
-    // favourites: [
-    //     {
-    //         type: mongoose.Types.ObjectId,
-    //         ref: 'User',
-    //     }
-    // ],
-    // author: {
-    //     type: mongoose.Types.ObjectId,
-    //     ref: 'User',
-    // },
-    // author: {
-    //     type: mongoose.Types.ObjectId,
-    //     ref: 'User',
-    // },
+    favourites: [
+        {
+            type: mongoose.Types.ObjectId,
+            ref: 'User',
+        }
+    ],
+    creator: {
+        type: mongoose.Types.ObjectId,
+        ref: 'User',
+    },
+    owner: {
+        type: mongoose.Types.ObjectId,
+        ref: 'User',
+    },
 }, {
     timestamps: true,
 });
