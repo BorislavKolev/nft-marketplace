@@ -1769,20 +1769,6 @@ a.text-dark:hover, a.text-dark:focus {
   left: 20px;
 }
 
-.card-blog-row *:first-child .card-blog {
-  background-color: #6C55F9;
-}
-
-.card-blog-row *:first-child .card-blog .post-author,
-.card-blog-row *:first-child .card-blog .post-title a,
-.card-blog-row *:first-child .card-blog .footer a {
-  color: #fff;
-}
-
-.card-blog-row *:first-child .card-blog .post-date {
-  color: rgba(255, 255, 255, 0.6);
-}
-
 .form-search-blog .custom-select {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
@@ -1792,8 +1778,8 @@ a.text-dark:hover, a.text-dark:focus {
   position: relative;
   display: block;
   margin: 0 auto;
-  width: 300px;
-  height: 280px;
+  width: 205px;
+  height: 205px;
   background-color: #645F88;
   border-radius: 8px;
   overflow: hidden;

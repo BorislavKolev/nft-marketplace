@@ -9,12 +9,13 @@ import Login from './components/Login';
 import Explore from './components/Explore';
 import Create from './components/Create';
 import Logout from './components/Logout';
+import Details from './components/Details';
 
 
 function App() {
   return (
     <AuthProvider>
-    <div id="wrapper">
+    <div>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -23,6 +24,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/logout" element={<Logout />} />
+        <Route path="/details" element={<Details />} />
       </Routes>
 
       <Footer />

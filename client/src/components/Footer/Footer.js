@@ -1,91 +1,65 @@
 const Footer = () => {
     return(
-        <div>
-        <a href="#" id="back-to-top"></a>
-        <footer>
-            <div className="container">
-                <div className="row">
-                    <div className="col-md-3 col-sm-6 col-xs-1">
-                        <div className="widget">
-                            <h5>Marketplace</h5>
-                            <ul>
-                                <li><a href="#">All NFTs</a></li>
-                                <li><a href="#">Art</a></li>
-                                <li><a href="#">Music</a></li>
-                                <li><a href="#">Domain Names</a></li>
-                                <li><a href="#">Virtual World</a></li>
-                                <li><a href="#">Collectibles</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="col-md-3 col-sm-6 col-xs-1">
-                        <div className="widget">
-                            <h5>Resources</h5>
-                            <ul>
-                                <li><a href="#">Help Center</a></li>
-                                <li><a href="#">Partners</a></li>
-                                <li><a href="#">Suggestions</a></li>
-                                <li><a href="#">Discord</a></li>
-                                <li><a href="#">Docs</a></li>
-                                <li><a href="#">Newsletter</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="col-md-3 col-sm-6 col-xs-1">
-                        <div className="widget">
-                            <h5>Community</h5>
-                            <ul>
-                                <li><a href="#">Community</a></li>
-                                <li><a href="#">Documentation</a></li>
-                                <li><a href="#">Brand Assets</a></li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Forum</a></li>
-                                <li><a href="#">Mailing List</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="col-md-3 col-sm-6 col-xs-1">
-                        <div className="widget">
-                            <h5>Newsletter</h5>
-                            <p>Signup for our newsletter to get the latest news in your inbox.</p>
-                            <form action="blank.php" className="row form-dark" id="form_subscribe" method="post" name="form_subscribe">
-                                <div className="col text-center">
-                                    <input className="form-control" id="txt_subscribe" name="txt_subscribe" placeholder="enter your email" type="text" /> <a href="#" id="btn-subscribe"><i className="arrow_right bg-color-secondary"></i></a>
-                                    <div className="clearfix"></div>
-                                </div>
-                            </form>
-                            <div className="spacer-10"></div>
-                            <small>Your email is safe with us. We don't spam.</small>
-                        </div>
-                    </div>
-                </div>
+        <footer className="page-footer">
+        <div className="container">
+          <div className="row justify-content-center mb-5">
+            <div className="col-lg-3 py-3">
+              <h3>NFT<span className="text-primary">marketplace.</span></h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+    
+              <p><a href="#" >digigram@mail.com</a></p>
+              <p><a href="#">+00 1122 3344 5566</a></p>
             </div>
-            <div className="subfooter">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-12">
-                            <div className="de-flex">
-                                <div className="de-flex-col">
-                                    <a href="02_dark-index.html">
-                                        <img alt="" className="f-logo" src="/images/logo-light.png" /><span className="copy">&copy; Copyright 2021 - Gigaland by Designesia</span>
-                                    </a>
-                                </div>
-                                <div className="de-flex-col">
-                                    <div className="social-icons">
-                                        <a href="#"><i className="fa fa-facebook fa-lg"></i></a>
-                                        <a href="#"><i className="fa fa-twitter fa-lg"></i></a>
-                                        <a href="#"><i className="fa fa-linkedin fa-lg"></i></a>
-                                        <a href="#"><i className="fa fa-pinterest fa-lg"></i></a>
-                                        <a href="#"><i className="fa fa-rss fa-lg"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div className="col-lg-3 py-3">
+              <h5>Quick Links</h5>
+              <ul className="footer-menu">
+                <li><a href="#">How it works</a></li>
+                <li><a href="#">Security</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Report a Bug</a></li>
+              </ul>
             </div>
-        </footer>
-        </div>
+            <div className="col-lg-3 py-3">
+              <h5>About Us</h5>
+              <ul className="footer-menu">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Our Teams</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">News & Press</a></li>
+              </ul>
+            </div>
+            <div className="col-lg-3 py-3">
+              <h5>Subscribe</h5>
+              <form action="#">
+                <input type="text" className="form-control" placeholder="Enter your mail.." />
+              </form>
+    
+              <div className="sosmed-button mt-4">
+                <a href="#"><span className="mai-logo-facebook-f"></span></a>
+                <a href="#"><span className="mai-logo-twitter"></span></a>
+                <a href="#"><span className="mai-logo-google"></span></a>
+                <a href="#"><span className="mai-logo-linkedin"></span></a>
+              </div>
+            </div>
+          </div>
+    
+          <div className="row">
+            <div className="col-sm-6 py-2">
+              <p id="copyright">&copy; 2020 <a href="https://macodeid.com/">MACode ID</a>. All rights reserved</p>
+            </div>
+            <div className="col-sm-6 py-2 text-right">
+              <div className="d-inline-block px-3">
+                <a href="#">Privacy</a>
+              </div>
+              <div className="d-inline-block px-3">
+                <a href="#">Contact Us</a>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </footer> 
     );
 }
 

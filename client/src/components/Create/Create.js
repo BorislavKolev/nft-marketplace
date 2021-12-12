@@ -13,6 +13,7 @@ const Create = () => {
         let title = formData.get('title');
         let description = formData.get('description');
         let imageUrl = formData.get('imageUrl');
+        let price = formData.get('price');
 
         nftService.create({
             title,
@@ -20,6 +21,7 @@ const Create = () => {
             imageUrl,
             creator: user._id,
             owner: user._id,
+            price,
             favourites: [],
         }, user.accessToken)
             .then(result => {
@@ -28,62 +30,38 @@ const Create = () => {
     }
     
     return (
-        <div className="no-bottom no-top" id="content">
-            <div id="top"></div>
-
-            <section id="subheader" className="text-light" data-bgimage="url(/images/background/subheader-dark.jpg) top">
-                <div className="center-y relative text-center">
-                    <div className="container">
-                        <div className="row">
-
-                            <div className="col-md-12 text-center">
-                                <h1>Create Single Collectible</h1>
-                            </div>
-                            <div className="clearfix"></div>
-                        </div>
-                    </div>
+        <div className="page-section">
+        <div className="container">
+          <div className="row align-items-center">
+         
+            <div className="col-lg-6 py-3">
+              <div className="subhead">Let the world see your work...</div>
+              <h2 className="title-section">Create NFT</h2>
+              <div className="divider"></div>
+              
+              <form method="POST" onSubmit={onNftCreate}>
+                <h5>Title</h5>
+                <div className="py-2">
+                  <input type='text' name='title' id='title' className="form-control" placeholder="e.g. 'Crypto Funk'"/>
                 </div>
-            </section>
-
-
-            <section aria-label="section">
-                <div className="container">
-                    <div className="row wow fadeIn">
-                        <div className="col-lg-10 offset-lg-1">
-                            <form id="form-create-item" className="form-border" method="POST" onSubmit={onNftCreate}>
-                                <div className="field-set">
-
-
-
-                                    <h5>Title</h5>
-                                    <input type="text" name="title" id="title" className="form-control" placeholder="e.g. 'Crypto Funk'" />
-
-                                    <div className="spacer-20"></div>
-
-                                    <h5>Description</h5>
-                                    <textarea data-autoresize name="description" id="description" className="form-control" placeholder="e.g. 'This is very limited item'"></textarea>
-
-                                    <div className="spacer-20"></div>
-
-                                    <h5>Image Url</h5>
-                                    <textarea data-autoresize name="imageUrl" id="imageUrl" className="form-control" placeholder="e.g. 'https://cloudfront-us-east-1.images.arcpublishing.com/coindesk/FGHMFCBDIVHB3N6PSB7GNB53NM.png'"></textarea>
-
-                                    <div className="spacer-20"></div>
-
-                                    <input type="submit" id="submit" className="btn-main" value="Create Item"/>
-                                
-
-                                </div>
-                            </form>
-                        </div>
-
-
-                    </div>
+                <h5>Description</h5>
+                <div className="py-2">
+                  <textarea type='text' name='description' id='description' className="form-control" placeholder="e.g. 'This is very limited item'"/>
                 </div>
-
-            </section>
-
-        </div>
+                <h5>Image Url</h5>
+                <div className="py-2">
+                  <textarea type='text' name='imageUrl' id='imageUrl' className="form-control" placeholder="e.g. 'https://***.png'"/>
+                </div>
+                <h5>Price in ETH</h5>
+                <div className="py-2">
+                  <input type='number' name='price' id='price' className="form-control" min="0" step="any" placeholder="0.5"/>
+                </div>
+                <button type="submit" className="btn btn-primary rounded-pill mt-4">Create</button>
+              </form>
+            </div>
+          </div>
+        </div> 
+      </div> 
     );
 }
 

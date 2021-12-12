@@ -7,63 +7,56 @@ const Header = () => {
 
     let guestNavigation = (
         <>
-            <li>
-                <Link to="/login">Login<span></span></Link>
+            <li className="nav-item">
+                  <Link to="/login" className="nav-link">Login</Link>
             </li>
-            <li>
-                <Link to="/register">Register<span></span></Link>
+            <li className="nav-item">
+                <Link to="/register" className="nav-link">Register</Link>
             </li>
         </>
     );
 
     let userNavigation = (
-            <li>
-                <Link to="/logout">Logout<span></span></Link>
+            <li className="nav-item">
+                <Link to="/logout" className="nav-link">Logout</Link>
             </li>
     );
 
     return (
-        <header className="transparent">
-            <div className="container">
-                <div className="row">
-                    <div className="col-md-12">
-                        <div className="de-flex sm-pt10">
-                            <div className="de-flex-col">
-                                <div className="de-flex-col">
-                                    <div id="logo">
-                                        <Link to="/">
-                                            <img alt="" src="/images/logo-light.png" />
-                                        </Link>
-                                    </div>
-                                </div>
-                                <div className="de-flex-col">
-                                    <input id="quick_search" className="xs-hide" name="quick_search" placeholder="search item here..." type="text" />
-                                </div>
-                            </div>
-                            <div className="de-flex-col header-col-mid">
-                                <ul id="mainmenu">
-                                    <li>
-                                        <Link to="/">Home<span></span></Link>
-                                    </li>
-                                    <li>
-                                        <Link to="/explore">Explore<span></span></Link>
-                                    </li>
-
-                                    {user.email
+        <header>
+        <nav className="navbar navbar-expand-lg navbar-light navbar-float">
+          <div className="container">
+            <Link to="/" className="navbar-brand">NFT<span className="text-primary">marketplace.</span></Link>
+    
+            <button className="navbar-toggler" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span className="navbar-toggler-icon"></span>
+            </button>
+    
+            <div className="navbar-collapse collapse" id="navbarContent">
+              <ul className="navbar-nav ml-lg-4 pt-3 pt-lg-0">
+                <li className="nav-item">
+                  <Link to="/" className="nav-link">Home</Link>
+                </li>
+                <li className="nav-item">
+                  <Link to="/explore" className="nav-link">Explore</Link>
+                </li>
+                {user.email
                                         ? userNavigation
                                         : guestNavigation
-                                    }
-                                </ul>
-                                <div className="menu_side_area">
-                                    <Link to="/create" className="btn-main btn-wallet"><i className="icon_wallet_alt"></i><span>Create NFT</span></Link>
-                                    <span id="menu-btn"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                               }
+               
+              </ul>
+    
+              <div className="ml-auto">
+                <Link to="/create" className="btn btn-outline rounded-pill">Create NFT</Link>
+              </div>
             </div>
-        </header>
+          </div>
+        </nav>
+    
+        
+      </header>
+     
     );
 }
 

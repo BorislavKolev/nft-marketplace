@@ -3,699 +3,447 @@ import './Home.css';
 const Home = () => {
     return (
 
-        <div className="no-bottom no-top" id="content">
-            <div id="top"></div>
-            <section id="section-hero" aria-label="section" className="no-top no-bottom vh-100" data-bgimage="url(images/background/bg-shape-1-dark.jpg) bottom">
-                <div className="v-center">
-                    <div className="container">
-                        <div className="row align-items-center">
-                            <div className="col-md-6">
-                                <div className="spacer-single"></div>
-                                <h6 className="wow fadeInUp" data-wow-delay=".5s"><span className="text-uppercase id-color-2">Gigaland Market</span></h6>
-                                <div className="spacer-10"></div>
-                                <h1 className="wow fadeInUp" data-wow-delay=".75s">Create, sell or collect digital items.</h1>
-                                <p className="wow fadeInUp lead" data-wow-delay="1s">
-                                    Unit of data stored on a digital ledger, called a blockchain, that certifies a digital asset to be unique and therefore not interchangeable</p>
-                                <div className="spacer-10"></div>
-                                <a href="02_dark-explore.html" className="btn-main wow fadeInUp lead" data-wow-delay="1.25s">Explore</a>
-                                <div className="mb-sm-30"></div>
-                            </div>
-                            <div className="col-md-6 xs-hide">
-                                <img src="/images/misc/nft.png" className="lazy img-fluid wow fadeIn" data-wow-delay="1.25s" alt="" />
-                            </div>
-                        </div>
-                    </div>
+     <div>
+         
+  
+  <div className="back-to-top"></div>
+
+ 
+
+  <main>
+  <div className="page-banner home-banner">
+          <div className="container h-100">
+            <div className="row align-items-center h-100">
+              <div className="col-lg-6 py-3 wow fadeInUp">
+                <h1 className="mb-4">Great Companies are built on great Products</h1>
+                <p className="text-lg mb-5">Ignite the most powerfull growth engine you have ever built for your company</p>
+    
+                <a href="#" className="btn btn-outline border text-secondary">More Info</a>
+                <a href="#" className="btn btn-primary btn-split ml-2">Watch Video <div className="fab"><span className="mai-play"></span></div></a>
+              </div>
+              <div className="col-lg-6 py-3 wow zoomIn">
+                <div className="img-place">
+                  <img src="/img/bg_image_1.png" alt="" />
                 </div>
-            </section>
-            <section id="section-intro" className="no-top no-bottom">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-4 col-md-6 mb-sm-30">
-                            <div className="feature-box f-boxed style-3">
-                                <i className="wow fadeInUp bg-color-2 i-boxed icon_wallet"></i>
-                                <div className="text">
-                                    <h4 className="wow fadeInUp">Set up your wallet</h4>
-                                    <p className="wow fadeInUp" data-wow-delay=".25s">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem.</p>
-                                </div>
-                                <i className="wm icon_wallet"></i>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 col-md-6 mb-sm-30">
-                            <div className="feature-box f-boxed style-3">
-                                <i className="wow fadeInUp bg-color-2 i-boxed icon_cloud-upload_alt"></i>
-                                <div className="text">
-                                    <h4 className="wow fadeInUp">Add your NFT's</h4>
-                                    <p className="wow fadeInUp" data-wow-delay=".25s">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem.</p>
-                                </div>
-                                <i className="wm icon_cloud-upload_alt"></i>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 col-md-6 mb-sm-30">
-                            <div className="feature-box f-boxed style-3">
-                                <i className="wow fadeInUp bg-color-2 i-boxed icon_tags_alt"></i>
-                                <div className="text">
-                                    <h4 className="wow fadeInUp">Sell your NFT's</h4>
-                                    <p className="wow fadeInUp" data-wow-delay=".25s">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem.</p>
-                                </div>
-                                <i className="wm icon_tags_alt"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="section-collections" className="no-bottom">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-12">
-                            <div className="text-center">
-                                <h2>Hot Collections</h2>
-                                <div className="small-border bg-color-2"></div>
-                            </div>
-                        </div>
-                      
-
-                        <div id="collection-carousel" className="owl-carousel wow fadeIn">
-
-                            <div className="nft_coll">
-                                <div className="nft_wrap">
-                                    <a href="02_dark-collection.html"><img src="/images/collections/coll-1.jpg" className="lazy img-fluid" alt="" /></a>
-                                </div>
-                                <div className="nft_coll_pp">
-                                    <a href="02_dark-collection.html"><img className="lazy pp-coll" src="/images/author/author-1.jpg" alt="" /></a>
-                                    <i className="fa fa-check"></i>
-                                </div>
-                                <div className="nft_coll_info">
-                                    <a href="02_dark-collection.html"><h4>Abstraction</h4></a>
-                                    <span>ERC-192</span>
-                                </div>
-                            </div>
-
-                            <div className="nft_coll">
-                                <div className="nft_wrap">
-                                    <a href="02_dark-collection.html"><img src="/images/collections/coll-2.jpg" className="lazy img-fluid" alt="" /></a>
-                                </div>
-                                <div className="nft_coll_pp">
-                                    <a href="02_dark-collection.html"><img className="lazy pp-coll" src="/images/author/author-2.jpg" alt="" /></a>
-                                    <i className="fa fa-check"></i>
-                                </div>
-                                <div className="nft_coll_info">
-                                    <a href="02_dark-collection.html"><h4>Patternlicious</h4></a>
-                                    <span>ERC-61</span>
-                                </div>
-                            </div>
-
-                            <div className="nft_coll">
-                                <div className="nft_wrap">
-                                    <a href="02_dark-collection.html"><img src="/images/collections/coll-3.jpg" className="lazy img-fluid" alt="" /></a>
-                                </div>
-                                <div className="nft_coll_pp">
-                                    <a href="02_dark-collection.html"><img className="lazy pp-coll" src="/images/author/author-3.jpg" alt="" /></a>
-                                    <i className="fa fa-check"></i>
-                                </div>
-                                <div className="nft_coll_info">
-                                    <a href="02_dark-collection.html"><h4>Skecthify</h4></a>
-                                    <span>ERC-126</span>
-                                </div>
-                            </div>
-
-                            <div className="nft_coll">
-                                <div className="nft_wrap">
-                                    <a href="02_dark-collection.html"><img src="/images/collections/coll-4.jpg" className="lazy img-fluid" alt="" /></a>
-                                </div>
-                                <div className="nft_coll_pp">
-                                    <a href="02_dark-collection.html"><img className="lazy pp-coll" src="/images/author/author-4.jpg" alt="" /></a>
-                                    <i className="fa fa-check"></i>
-                                </div>
-                                <div className="nft_coll_info">
-                                    <a href="02_dark-collection.html"><h4>Cartoonism</h4></a>
-                                    <span>ERC-73</span>
-                                </div>
-                            </div>
-
-                            <div className="nft_coll">
-                                <div className="nft_wrap">
-                                    <a href="02_dark-collection.html"><img src="/images/collections/coll-5.jpg" className="lazy img-fluid" alt="" /></a>
-                                </div>
-                                <div className="nft_coll_pp">
-                                    <a href="02_dark-collection.html"><img className="lazy pp-coll" src="/images/author/author-5.jpg" alt="" /></a>
-                                    <i className="fa fa-check"></i>
-                                </div>
-                                <div className="nft_coll_info">
-                                    <a href="02_dark-collection.html"><h4>Virtuland</h4></a>
-                                    <span>ERC-85</span>
-                                </div>
-                            </div>
-
-                            <div className="nft_coll">
-                                <div className="nft_wrap">
-                                    <a href="02_dark-collection.html"><img src="/images/collections/coll-6.jpg" className="lazy img-fluid" alt="" /></a>
-                                </div>
-                                <div className="nft_coll_pp">
-                                    <a href="02_dark-collection.html"><img className="lazy pp-coll" src="/images/author/author-6.jpg" alt="" /></a>
-                                    <i className="fa fa-check"></i>
-                                </div>
-                                <div className="nft_coll_info">
-                                    <a href="02_dark-collection.html"><h4>Papercut</h4></a>
-                                    <span>ERC-42</span>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="section-items" className="no-bottom">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-12">
-                            <div className="text-center">
-                                <h2>New Items</h2>
-                                <div className="small-border bg-color-2"></div>
-                            </div>
-                        </div>
-                        <div id="/items-carousel" className="owl-carousel wow fadeIn">
-
-                            <div className="d-item">
-                                <div className="nft__item">
-                                    <div className="de_countdown" data-year="2021" data-month="12" data-day="16" data-hour="8"></div>
-                                    <div className="author_list_pp">
-                                        <a href="02_dark-author.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Creator: Monica Lucas">
-                                            <img className="lazy" src="/images/author/author-1.jpg" alt="" />
-                                            <i className="fa fa-check"></i>
-                                        </a>
-                                    </div>
-                                    <div className="nft__item_wrap">
-                                        <div className="nft__item_extra">
-                                            <div className="nft__item_buttons">
-                                                <button onclick="location.href='02_dark-item-details.html'">Buy Now</button>
-                                                <div className="nft__item_share">
-                                                    <h4>Share</h4>
-                                                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://gigaland.io" target="_blank"><i className="fa fa-facebook fa-lg"></i></a>
-                                                    <a href="https://twitter.com/intent/tweet?url=https://gigaland.io" target="_blank"><i className="fa fa-twitter fa-lg"></i></a>
-                                                    <a href="mailto:?subject=I wanted you to see this site&amp;body=Check out this site https://gigaland.io"><i className="fa fa-envelope fa-lg"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <a href="02_dark-item-details.html">
-                                            <img src="/images/items/static-1.jpg" className="lazy nft__item_preview" alt="" />
-                                        </a>
-                                    </div>
-                                    <div className="nft__item_info">
-                                        <a href="02_dark-item-details.html">
-                                            <h4>Pinky Ocean</h4>
-                                        </a>
-                                        <div className="nft__item_click">
-                                            <span></span>
-                                        </div>
-                                        <div className="nft__item_price">
-                                            0.08 ETH<span>1/20</span>
-                                        </div>
-                                        <div className="nft__item_action">
-                                            <a href="#">Place a bid</a>
-                                        </div>
-                                        <div className="nft__item_like">
-                                            <i className="fa fa-heart"></i><span>50</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="d-item">
-                                <div className="nft__item">
-                                    <div className="author_list_pp">
-                                        <a href="02_dark-author.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Creator: Stacy Long">
-                                            <img className="lazy" src="/images/author/author-10.jpg" alt="" />
-                                            <i className="fa fa-check"></i>
-                                        </a>
-                                    </div>
-                                    <div className="nft__item_wrap">
-                                        <div className="nft__item_extra">
-                                            <div className="nft__item_buttons">
-                                                <button onclick="location.href='02_dark-item-details.html'">Buy Now</button>
-                                                <div className="nft__item_share">
-                                                    <h4>Share</h4>
-                                                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://gigaland.io" target="_blank"><i className="fa fa-facebook fa-lg"></i></a>
-                                                    <a href="https://twitter.com/intent/tweet?url=https://gigaland.io" target="_blank"><i className="fa fa-twitter fa-lg"></i></a>
-                                                    <a href="mailto:?subject=I wanted you to see this site&amp;body=Check out this site https://gigaland.io"><i className="fa fa-envelope fa-lg"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <a href="02_dark-item-details.html">
-                                            <img src="/images/items/static-2.jpg" className="lazy nft__item_preview" alt="" />
-                                        </a>
-                                    </div>
-                                    <div className="nft__item_info">
-                                        <a href="02_dark-item-details.html">
-                                            <h4>Deep Sea Phantasy</h4>
-                                        </a>
-                                        <div className="nft__item_click">
-                                            <span></span>
-                                        </div>
-                                        <div className="nft__item_price">
-                                            0.06 ETH<span>1/22</span>
-                                        </div>
-                                        <div className="nft__item_action">
-                                            <a href="#">Place a bid</a>
-                                        </div>
-                                        <div className="nft__item_like">
-                                            <i className="fa fa-heart"></i><span>80</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="d-item">
-                                <div className="nft__item">
-                                    <div className="de_countdown" data-year="2021" data-month="12" data-day="14" data-hour="8"></div>
-                                    <div className="author_list_pp">
-                                        <a href="02_dark-author.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Creator: Ida Chapman">
-                                            <img className="lazy" src="/images/author/author-11.jpg" alt="" />
-                                            <i className="fa fa-check"></i>
-                                        </a>
-                                    </div>
-                                    <div className="nft__item_wrap">
-                                        <div className="nft__item_extra">
-                                            <div className="nft__item_buttons">
-                                                <button onclick="location.href='02_dark-item-details.html'">Buy Now</button>
-                                                <div className="nft__item_share">
-                                                    <h4>Share</h4>
-                                                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://gigaland.io" target="_blank"><i className="fa fa-facebook fa-lg"></i></a>
-                                                    <a href="https://twitter.com/intent/tweet?url=https://gigaland.io" target="_blank"><i className="fa fa-twitter fa-lg"></i></a>
-                                                    <a href="mailto:?subject=I wanted you to see this site&amp;body=Check out this site https://gigaland.io"><i className="fa fa-envelope fa-lg"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <a href="02_dark-item-details.html">
-                                            <img src="/images/items/static-3.jpg" className="lazy nft__item_preview" alt="" />
-                                        </a>
-                                    </div>
-                                    <div className="nft__item_info">
-                                        <a href="02_dark-item-details.html">
-                                            <h4>Rainbow Style</h4>
-                                        </a>
-                                        <div className="nft__item_click">
-                                            <span></span>
-                                        </div>
-                                        <div className="nft__item_price">
-                                            0.05 ETH<span>1/11</span>
-                                        </div>
-                                        <div className="nft__item_action">
-                                            <a href="#">Place a bid</a>
-                                        </div>
-                                        <div className="nft__item_like">
-                                            <i className="fa fa-heart"></i><span>97</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="d-item">
-                                <div className="nft__item">
-                                    <div className="author_list_pp">
-                                        <a href="02_dark-author.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Creator: Fred Ryan">
-                                            <img className="lazy" src="/images/author/author-12.jpg" alt="" />
-                                            <i className="fa fa-check"></i>
-                                        </a>
-                                    </div>
-                                    <div className="nft__item_wrap">
-                                        <div className="nft__item_extra">
-                                            <div className="nft__item_buttons">
-                                                <button onclick="location.href='02_dark-item-details.html'">Buy Now</button>
-                                                <div className="nft__item_share">
-                                                    <h4>Share</h4>
-                                                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://gigaland.io" target="_blank"><i className="fa fa-facebook fa-lg"></i></a>
-                                                    <a href="https://twitter.com/intent/tweet?url=https://gigaland.io" target="_blank"><i className="fa fa-twitter fa-lg"></i></a>
-                                                    <a href="mailto:?subject=I wanted you to see this site&amp;body=Check out this site https://gigaland.io"><i className="fa fa-envelope fa-lg"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <a href="02_dark-item-details.html">
-                                            <img src="/images/items/static-4.jpg" className="lazy nft__item_preview" alt="" />
-                                        </a>
-                                    </div>
-                                    <div className="nft__item_info">
-                                        <a href="02_dark-item-details.html">
-                                            <h4>Two Tigers</h4>
-                                        </a>
-                                        <div className="nft__item_click">
-                                            <span></span>
-                                        </div>
-                                        <div className="nft__item_price">
-                                            0.02 ETH<span>1/15</span>
-                                        </div>
-                                        <div className="nft__item_action">
-                                            <a href="#">Place a bid</a>
-                                        </div>
-                                        <div className="nft__item_like">
-                                            <i className="fa fa-heart"></i><span>73</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="d-item">
-                                <div className="nft__item">
-                                    <div className="author_list_pp">
-                                        <a href="02_dark-author.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Creator: Franklin Greer">
-                                            <img className="lazy" src="/images/author/author-9.jpg" alt="" />
-                                            <i className="fa fa-check"></i>
-                                        </a>
-                                    </div>
-                                    <div className="nft__item_wrap">
-                                        <div className="nft__item_extra">
-                                            <div className="nft__item_buttons">
-                                                <button onclick="location.href='02_dark-item-details.html'">Buy Now</button>
-                                                <div className="nft__item_share">
-                                                    <h4>Share</h4>
-                                                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://gigaland.io" target="_blank"><i className="fa fa-facebook fa-lg"></i></a>
-                                                    <a href="https://twitter.com/intent/tweet?url=https://gigaland.io" target="_blank"><i className="fa fa-twitter fa-lg"></i></a>
-                                                    <a href="mailto:?subject=I wanted you to see this site&amp;body=Check out this site https://gigaland.io"><i className="fa fa-envelope fa-lg"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <a href="02_dark-item-details.html">
-                                            <img src="/images/items/anim-4.webp" className="lazy nft__item_preview" alt="" />
-                                        </a>
-                                    </div>
-                                    <div className="nft__item_info">
-                                        <a href="02_dark-item-details.html">
-                                            <h4>The Truth</h4>
-                                        </a>
-                                        <div className="nft__item_click">
-                                            <span></span>
-                                        </div>
-                                        <div className="nft__item_price">
-                                            0.06 ETH<span>1/20</span>
-                                        </div>
-                                        <div className="nft__item_action">
-                                            <a href="#">Place a bid</a>
-                                        </div>
-                                        <div className="nft__item_like">
-                                            <i className="fa fa-heart"></i><span>26</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="d-item">
-                                <div className="nft__item">
-                                    <div className="de_countdown" data-year="2021" data-month="12" data-day="6" data-hour="8"></div>
-                                    <div className="author_list_pp">
-                                        <a href="02_dark-author.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Creator: Mamie Barnett">
-                                            <img className="lazy" src="/images/author/author-2.jpg" alt="" />
-                                            <i className="fa fa-check"></i>
-                                        </a>
-                                    </div>
-                                    <div className="nft__item_wrap">
-                                        <div className="nft__item_extra">
-                                            <div className="nft__item_buttons">
-                                                <button onclick="location.href='02_dark-item-details.html'">Buy Now</button>
-                                                <div className="nft__item_share">
-                                                    <h4>Share</h4>
-                                                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://gigaland.io" target="_blank"><i className="fa fa-facebook fa-lg"></i></a>
-                                                    <a href="https://twitter.com/intent/tweet?url=https://gigaland.io" target="_blank"><i className="fa fa-twitter fa-lg"></i></a>
-                                                    <a href="mailto:?subject=I wanted you to see this site&amp;body=Check out this site https://gigaland.io"><i className="fa fa-envelope fa-lg"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <a href="02_dark-item-details.html">
-                                            <img src="/images/items/anim-2.webp" className="lazy nft__item_preview" alt="" />
-                                        </a>
-                                    </div>
-                                    <div className="nft__item_info">
-                                        <a href="02_dark-item-details.html">
-                                            <h4>Running Puppets</h4>
-                                        </a>
-                                        <div className="nft__item_click">
-                                            <span></span>
-                                        </div>
-                                        <div className="nft__item_price">
-                                            0.03 ETH<span>1/24</span>
-                                        </div>
-                                        <div className="nft__item_action">
-                                            <a href="#">Place a bid</a>
-                                        </div>
-                                        <div className="nft__item_like">
-                                            <i className="fa fa-heart"></i><span>45</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="d-item">
-                                <div className="nft__item">
-                                    <div className="author_list_pp">
-                                        <a href="02_dark-author.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Creator: Nicholas Daniels">
-                                            <img className="lazy" src="/images/author/author-3.jpg" alt="" />
-                                            <i className="fa fa-check"></i>
-                                        </a>
-                                    </div>
-                                    <div className="nft__item_wrap">
-                                        <div className="nft__item_extra">
-                                            <div className="nft__item_buttons">
-                                                <button onclick="location.href='02_dark-item-details.html'">Buy Now</button>
-                                                <div className="nft__item_share">
-                                                    <h4>Share</h4>
-                                                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://gigaland.io" target="_blank"><i className="fa fa-facebook fa-lg"></i></a>
-                                                    <a href="https://twitter.com/intent/tweet?url=https://gigaland.io" target="_blank"><i className="fa fa-twitter fa-lg"></i></a>
-                                                    <a href="mailto:?subject=I wanted you to see this site&amp;body=Check out this site https://gigaland.io"><i className="fa fa-envelope fa-lg"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <a href="02_dark-item-details.html">
-                                            <img src="/images/items/anim-1.webp" className="lazy nft__item_preview" alt="" />
-                                        </a>
-                                    </div>
-                                    <div className="nft__item_info">
-                                        <a href="02_dark-item-details.html">
-                                            <h4>USA Wordmation</h4>
-                                        </a>
-                                        <div className="nft__item_click">
-                                            <span></span>
-                                        </div>
-                                        <div className="nft__item_price">
-                                            0.09 ETH<span>1/25</span>
-                                        </div>
-                                        <div className="nft__item_action">
-                                            <a href="#">Place a bid</a>
-                                        </div>
-                                        <div className="nft__item_like">
-                                            <i className="fa fa-heart"></i><span>76</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="section-popular" className="pb-5">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-12">
-                            <div className="text-center">
-                                <h2>Top Sellers</h2>
-                                <div className="small-border bg-color-2"></div>
-                            </div>
-                        </div>
-                        <div className="col-md-12 wow fadeIn">
-                            <ol className="author_list">
-                                <li>
-                                    <div className="author_list_pp">
-                                        <a href="02_dark-author.html">
-                                            <img className="lazy" src="/images/author/author-1.jpg" alt="" />
-                                            <i className="fa fa-check"></i>
-                                        </a>
-                                    </div>
-                                    <div className="author_list_info">
-                                        <a href="02_dark-author.html">Monica Lucas</a>
-                                        <span>3.2 ETH</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div className="author_list_pp">
-                                        <a href="02_dark-author.html">
-                                            <img className="lazy pp-author" src="/images/author/author-2.jpg" alt="" />
-                                            <i className="fa fa-check"></i>
-                                        </a>
-                                    </div>
-                                    <div className="author_list_info">
-                                        <a href="02_dark-author.html">Mamie Barnett</a>
-                                        <span>2.8 ETH</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div className="author_list_pp">
-                                        <a href="02_dark-author.html">
-                                            <img className="lazy pp-author" src="/images/author/author-3.jpg" alt="" />
-                                            <i className="fa fa-check"></i>
-                                        </a>
-                                    </div>
-                                    <div className="author_list_info">
-                                        <a href="02_dark-author.html">Nicholas Daniels</a>
-                                        <span>2.5 ETH</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div className="author_list_pp">
-                                        <a href="02_dark-author.html">
-                                            <img className="lazy pp-author" src="/images/author/author-4.jpg" alt="" />
-                                            <i className="fa fa-check"></i>
-                                        </a>
-                                    </div>
-                                    <div className="author_list_info">
-                                        <a href="02_dark-author.html">Lori Hart</a>
-                                        <span>2.2 ETH</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div className="author_list_pp">
-                                        <a href="02_dark-author.html">
-                                            <img className="lazy pp-author" src="/images/author/author-5.jpg" alt="" />
-                                            <i className="fa fa-check"></i>
-                                        </a>
-                                    </div>
-                                    <div className="author_list_info">
-                                        <a href="02_dark-author.html">Jimmy Wright</a>
-                                        <span>1.9 ETH</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div className="author_list_pp">
-                                        <a href="02_dark-author.html">
-                                            <img className="lazy pp-author" src="/images/author/author-6.jpg" alt="" />
-                                            <i className="fa fa-check"></i>
-                                        </a>
-                                    </div>
-                                    <div className="author_list_info">
-                                        <a href="02_dark-author.html">Karla Sharp</a>
-                                        <span>1.6 ETH</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div className="author_list_pp">
-                                        <a href="02_dark-author.html">
-                                            <img className="lazy pp-author" src="/images/author/author-7.jpg" alt="" />
-                                            <i className="fa fa-check"></i>
-                                        </a>
-                                    </div>
-                                    <div className="author_list_info">
-                                        <a href="02_dark-author.html">Gayle Hicks</a>
-                                        <span>1.5 ETH</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div className="author_list_pp">
-                                        <a href="02_dark-author.html">
-                                            <img className="lazy pp-author" src="/images/author/author-8.jpg" alt="" />
-                                            <i className="fa fa-check"></i>
-                                        </a>
-                                    </div>
-                                    <div className="author_list_info">
-                                        <a href="02_dark-author.html">Claude Banks</a>
-                                        <span>1.3 ETH</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div className="author_list_pp">
-                                        <a href="02_dark-author.html">
-                                            <img className="lazy pp-author" src="/images/author/author-9.jpg" alt="" />
-                                            <i className="fa fa-check"></i>
-                                        </a>
-                                    </div>
-                                    <div className="author_list_info">
-                                        <a href="02_dark-author.html">Franklin Greer</a>
-                                        <span>0.9 ETH</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div className="author_list_pp">
-                                        <a href="02_dark-author.html">
-                                            <img className="lazy pp-author" src="/images/author/author-10.jpg" alt="" />
-                                            <i className="fa fa-check"></i>
-                                        </a>
-                                    </div>
-                                    <div className="author_list_info">
-                                        <a href="02_dark-author.html">Stacy Long</a>
-                                        <span>0.8 ETH</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div className="author_list_pp">
-                                        <a href="02_dark-author.html">
-                                            <img className="lazy pp-author" src="/images/author/author-11.jpg" alt="" />
-                                            <i className="fa fa-check"></i>
-                                        </a>
-                                    </div>
-                                    <div className="author_list_info">
-                                        <a href="02_dark-author.html">Ida Chapman</a>
-                                        <span>0.6 ETH</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div className="author_list_pp">
-                                        <a href="02_dark-author.html">
-                                            <img className="lazy pp-author" src="/images/author/author-12.jpg" alt="" />
-                                            <i className="fa fa-check"></i>
-                                        </a>
-                                    </div>
-                                    <div className="author_list_info">
-                                        <a href="02_dark-author.html">Fred Ryan</a>
-                                        <span>0.5 eth</span>
-                                    </div>
-                                </li>
-                            </ol>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="section-category" className="no-top">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-12">
-                            <div className="text-center">
-                                <h2>Browse by category</h2>
-                                <div className="small-border bg-color-2"></div>
-                            </div>
-                        </div>
-                        <div className="col-md-2 col-sm-4 col-6 mb-sm-30 wow fadeInRight" data-wow-delay=".1s">
-                            <a href="02_dark-explore.html" className="/icon-box style-2 rounded">
-                                <i className="fa fa-image"></i>
-                                <span>Art</span>
-                            </a>
-                        </div>
-                        <div className="col-md-2 col-sm-4 col-6 mb-sm-30 wow fadeInRight" data-wow-delay=".2s">
-                            <a href="02_dark-explore.html" className="/icon-box style-2 rounded">
-                                <i className="fa fa-music"></i>
-                                <span>Music</span>
-                            </a>
-                        </div>
-                        <div className="col-md-2 col-sm-4 col-6 mb-sm-30 wow fadeInRight" data-wow-delay=".3s">
-                            <a href="02_dark-explore.html" className="/icon-box style-2 rounded">
-                                <i className="fa fa-search"></i>
-                                <span>Domain Names</span>
-                            </a>
-                        </div>
-                        <div className="col-md-2 col-sm-4 col-6 mb-sm-30 wow fadeInRight" data-wow-delay=".4s">
-                            <a href="02_dark-explore.html" className="/icon-box style-2 rounded">
-                                <i className="fa fa-globe"></i>
-                                <span>Virtual Worlds</span>
-                            </a>
-                        </div>
-                        <div className="col-md-2 col-sm-4 col-6 mb-sm-30 wow fadeInRight" data-wow-delay=".5s">
-                            <a href="02_dark-explore.html" className="/icon-box style-2 rounded">
-                                <i className="fa fa-vcard"></i>
-                                <span>Trading Cards</span>
-                            </a>
-                        </div>
-                        <div className="col-md-2 col-sm-4 col-6 mb-sm-30 wow fadeInRight" data-wow-delay=".6s">
-                            <a href="02_dark-explore.html" className="/icon-box style-2 rounded">
-                                <i className="fa fa-th"></i>
-                                <span>Collectibles</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
+              </div>
+            </div>
+          </div>
         </div>
+    <div className="page-section features">
+      <div className="container">
+        <div className="row justify-content-center">
+          <div className="col-md-6 col-lg-4 py-3 wow fadeInUp">
+            <div className="d-flex flex-row">
+              <div className="img-fluid mr-3">
+                <img src="/img/icon_pattern.svg" alt="" />
+              </div>
+              <div>
+                <h5>Provide financial advice by our advisor</h5>
+                <p>Copywrite, blogpublic realations content translation.</p>
+              </div>
+            </div>
+          </div>
+  
+          <div className="col-md-6 col-lg-4 py-3 wow fadeInUp">
+            <div className="d-flex flex-row">
+              <div className="img-fluid mr-3">
+                <img src="/img/icon_pattern.svg" alt="" />
+              </div>
+              <div>
+                <h5>Complete solutions for global organisations</h5>
+                <p>Copywrite, blogpublic realations content translation.</p>
+              </div>
+            </div>
+          </div>
+  
+          <div className="col-md-6 col-lg-4 py-3 wow fadeInUp">
+            <div className="d-flex flex-row">
+              <div className="img-fluid mr-3">
+                <img src="/img/icon_pattern.svg" alt="" />
+              </div>
+              <div>
+                <h5>Provide financial advice by our advisor</h5>
+                <p>Copywrite, blogpublic realations content translation.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div> 
+  
+    <div className="page-section">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-6 py-3 wow zoomIn">
+            <div className="img-place text-center">
+              <img src="/img/bg_image_2.png" alt="" />
+            </div>
+          </div>
+          <div className="col-lg-6 py-3 wow fadeInRight">
+            <h2 className="title-section">We're <span className="marked">Dynamic</span> Team of Creatives People</h2>
+            <div className="divider"></div>
+            <p>We provide marketing services to startups & small business to looking for partner for their digital media, design & dev lead generation & communication.</p>
+            <div className="img-place mb-3">
+              <img src="/img/testi_image.png" alt="" />
+            </div>
+            <a href="#" className="btn btn-primary">More Details</a>
+            <a href="#" className="btn btn-outline border ml-2">Success Stories</a>
+          </div>
+        </div>
+      </div> 
+    </div> 
+  
+    <div className="page-section counter-section">
+      <div className="container">
+        <div className="row align-items-center text-center">
+          <div className="col-lg-4">
+            <p>Total Invest</p>
+            <h2>$<span className="number" data-number="816278"></span></h2>
+          </div>
+          <div className="col-lg-4">
+            <p>Yearly Revenue</p>
+            <h2>$<span className="number" data-number="216422"></span></h2>
+          </div>
+          <div className="col-lg-4">
+            <p>Growth Ration</p>
+            <h2><span className="number" data-number="73"></span>%</h2>
+          </div>
+        </div>
+      </div> 
+    </div> 
+  
+    <div className="page-section">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-6 py-3 wow fadeInLeft">
+            <h2 className="title-section">We're <span className="marked">ready to</span> Serve you with best</h2>
+            <div className="divider"></div>
+            <p className="mb-5">We provide marketing services to startups & small business to looking for partner for their digital media, design & dev lead generation & communication.</p>
+            <a href="#" className="btn btn-primary">More Details</a>
+            <a href="#" className="btn btn-outline ml-2">See pricing</a>
+          </div>
+          <div className="col-lg-6 py-3 wow zoomIn">
+            <div className="img-place text-center">
+              <img src="/img/bg_image_3.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div> 
+  
+    <div className="page-section">
+      <div className="container">
+        <div className="text-center wow fadeInUp">
+          <div className="subhead">Why Choose Us</div>
+          <h2 className="title-section">Your <span className="marked">Comfort</span> is Our Priority</h2>
+          <div className="divider mx-auto"></div>
+        </div>
+  
+        <div className="row mt-5 text-center">
+          <div className="col-lg-4 py-3 wow fadeInUp">
+            <div className="display-3"><span className="mai-shapes"></span></div>
+            <h5>High Performance</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, sit.</p>
+          </div>
+          <div className="col-lg-4 py-3 wow fadeInUp">
+            <div className="display-3"><span className="mai-shapes"></span></div>
+            <h5>Friendly Prices</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, sit.</p>
+          </div>
+          <div className="col-lg-4 py-3 wow fadeInUp">
+            <div className="display-3"><span className="mai-shapes"></span></div>
+            <h5>No time-confusing</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, sit.</p>
+          </div>
+        </div>
+      </div> 
+    </div> 
+  
+    <div className="page-section border-top">
+      <div className="container">
+        <div className="text-center wow fadeInUp">
+          <h2 className="title-section">Pricing Plan</h2>
+          <div className="divider mx-auto"></div>
+        </div>
+  
+        <div className="row justify-content-center">
+          <div className="col-12 col-lg-auto py-3 wow fadeInLeft">
+            <div className="card-pricing">
+              <div className="header">
+                <div className="price-icon"><span className="mai-people"></span></div>
+                <div className="price-title">Membership</div>
+              </div>
+              <div className="body py-3">
+                <div className="price-tag">
+                  <span className="currency">$</span>
+                  <h2 className="display-4">30</h2>
+                  <span className="period">/monthly</span>
+                </div>
+                <div className="price-info">
+                  <p>Choose the plan that right for you</p>
+                </div>
+              </div>
+              <div className="footer">
+                <a href="#" className="btn btn-outline rounded-pill">Choose Plan</a>
+              </div>
+            </div>
+          </div>
+  
+          <div className="col-12 col-lg-auto py-3 wow fadeInUp">
+            <div className="card-pricing active">
+              <div className="header">
+                <div className="price-labled">Best</div>
+                <div className="price-icon"><span className="mai-business"></span></div>
+                <div className="price-title">Dedicated</div>
+              </div>
+              <div className="body py-3">
+                <div className="price-tag">
+                  <span className="currency">$</span>
+                  <h2 className="display-4">60</h2>
+                  <span className="period">/monthly</span>
+                </div>
+                <div className="price-info">
+                  <p>Choose the plan that right for you</p>
+                </div>
+              </div>
+              <div className="footer">
+                <a href="#" className="btn btn-outline rounded-pill">Choose Plan</a>
+              </div>
+            </div>
+          </div>
+  
+          <div className="col-12 col-lg-auto py-3 wow fadeInRight">
+            <div className="card-pricing">
+              <div className="header">
+                <div className="price-icon"><span className="mai-rocket-outline"></span></div>
+                <div className="price-title">Private</div>
+              </div>
+              <div className="body py-3">
+                <div className="price-tag">
+                  <span className="currency">$</span>
+                  <h2 className="display-4">90</h2>
+                  <span className="period">/monthly</span>
+                </div>
+                <div className="price-info">
+                  <p>Choose the plan that right for you</p>
+                </div>
+              </div>
+              <div className="footer">
+                <a href="#" className="btn btn-outline rounded-pill">Choose Plan</a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div> 
+    </div> 
+  
+    <div className="page-section bg-light">
+      <div className="container">
+        
+        <div className="owl-carousel wow fadeInUp" id="testimonials">
+          <div className="item">
+            <div className="row align-items-center">
+              <div className="col-md-6 py-3">
+                <div className="testi-image">
+                  <img src="/img/person/person_1.jpg" alt="" />
+                </div>
+              </div>
+              <div className="col-md-6 py-3">
+                <div className="testi-content">
+                  <p>Necessitatibus ipsum magni accusantium consequatur delectus a repudiandae nemo quisquam dolorum itaque, tenetur, esse optio eveniet beatae explicabo sapiente quo.</p>
+                  <div className="entry-footer">
+                    <strong>Melvin Platje</strong> &mdash; <span className="text-grey">CEO Slurin Group</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div className="item">
+            <div className="row align-items-center">
+              <div className="col-md-6 py-3">
+                <div className="testi-image">
+                  <img src="/img/person/person_2.jpg" alt="" />
+                </div>
+              </div>
+              <div className="col-md-6 py-3">
+                <div className="testi-content">
+                  <p>Repudiandae vero assumenda sequi labore ipsum eos ducimus provident a nam vitae et, dolorum temporibus inventore quaerat consectetur quos! Animi, qui ratione?</p>
+                  <div className="entry-footer">
+                    <strong>George Burke</strong> &mdash; <span className="text-grey">CEO Letro</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+      </div> 
+    </div> 
+  
+    <div className="page-section">
+      <div className="container">
+        <div className="row align-items-center">
+          <div className="col-lg-6 py-3 wow fadeInUp">
+            <h2 className="title-section">Get in Touch</h2>
+            <div className="divider"></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br/> Laborum ratione autem quidem veritatis!</p>
+  
+            <ul className="contact-list">
+              <li>
+                <div className="icon"><span className="mai-map"></span></div>
+                <div className="content">123 Fake Street, New York, USA</div>
+              </li>
+              <li>
+                <div className="icon"><span className="mai-mail"></span></div>
+                <div className="content"><a href="#">info@digigram.com</a></div>
+              </li>
+              <li>
+                <div className="icon"><span className="mai-phone-portrait"></span></div>
+                <div className="content"><a href="#">+00 1122 3344 55</a></div>
+              </li>
+            </ul>
+          </div>
+          <div className="col-lg-6 py-3 wow fadeInUp">
+            <div className="subhead">Contact Us</div>
+            <h2 className="title-section">Drop Us a Line</h2>
+            <div className="divider"></div>
+            
+            <form action="#">
+              <div className="py-2">
+                <input type="text" className="form-control" placeholder="Full name" />
+              </div>
+              <div className="py-2">
+                <input type="text" className="form-control" placeholder="Email" />
+              </div>
+              <div className="py-2">
+                <textarea rows="6" className="form-control" placeholder="Enter message"></textarea>
+              </div>
+              <button type="submit" className="btn btn-primary rounded-pill mt-4">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div> 
+    </div> 
+  
+    <div className="page-section border-top">
+      <div className="container">
+        <div className="text-center wow fadeInUp">
+          <div className="subhead">Our Blog</div>
+          <h2 className="title-section">Read our latest <span className="marked">News</span></h2>
+          <div className="divider mx-auto"></div>
+        </div>
+        <div className="row my-5 card-blog-row">
+          <div className="col-md-6 col-lg-3 py-3 wow fadeInUp">
+            <div className="card-blog">
+              <div className="header">
+                <div className="entry-footer">
+                  <div className="post-author">Sam Newman</div>
+                  <a href="#" className="post-date">23 Apr 2020</a>
+                </div>
+              </div>
+              <div className="body">
+                <div className="post-title"><a href="blog-single.html">What is Business Management?</a></div>
+              </div>
+              <div className="footer">
+                <a href="blog-single.html">Read More <span className="mai-chevron-forward text-sm"></span></a>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-6 col-lg-3 py-3 wow fadeInUp">
+            <div className="card-blog">
+              <div className="header">
+                <div className="avatar">
+                  <img src="/img/person/person_1.jpg" alt="" />
+                </div>
+                <div className="entry-footer">
+                  <div className="post-author">Sam Newman</div>
+                  <a href="#" className="post-date">23 Apr 2020</a>
+                </div>
+              </div>
+              <div className="body">
+                <div className="post-title"><a href="blog-single.html">What is Business Management?</a></div>
+                <div className="post-excerpt">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
+              </div>
+              <div className="footer">
+                <a href="blog-single.html">Read More <span className="mai-chevron-forward text-sm"></span></a>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-6 col-lg-3 py-3 wow fadeInUp">
+            <div className="card-blog">
+              <div className="header">
+                <div className="avatar">
+                  <img src="/img/person/person_2.jpg" alt="" />
+                </div>
+                <div className="entry-footer">
+                  <div className="post-author">Sam Newman</div>
+                  <a href="#" className="post-date">23 Apr 2020</a>
+                </div>
+              </div>
+              <div className="body">
+                <div className="post-title"><a href="blog-single.html">What is Business Management?</a></div>
+                <div className="post-excerpt">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
+              </div>
+              <div className="footer">
+                <a href="blog-single.html">Read More <span className="mai-chevron-forward text-sm"></span></a>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-6 col-lg-3 py-3 wow fadeInUp">
+            <div className="card-blog">
+              <div className="header">
+                <div className="avatar">
+                  <img src="/img/person/person_3.jpg" alt="" />
+                </div>
+                <div className="entry-footer">
+                  <div className="post-author">Sam Newman</div>
+                  <a href="#" className="post-date">23 Apr 2020</a>
+                </div>
+              </div>
+              <div className="body">
+                <div className="post-title"><a href="blog-single.html">What is Business Management?</a></div>
+                <div className="post-excerpt">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
+              </div>
+              <div className="footer">
+                <a href="blog-single.html">Read More <span className="mai-chevron-forward text-sm"></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div className="text-center">
+          <a href="blog.html" className="btn btn-outline-primary rounded-pill">Discover More</a>
+        </div>
+      </div> 
+    </div> 
+  
+    <div className="page-section client-section">
+      <div className="container-fluid">
+        <div className="row row-cols-2 row-cols-md-3 row-cols-lg-5 justify-content-center">
+          <div className="item wow zoomIn">
+            <img src="/img/clients/airbnb.png" alt="" />
+          </div>
+          <div className="item wow zoomIn">
+            <img src="/img/clients/google.png" alt="" />
+          </div>
+          <div className="item wow zoomIn">
+            <img src="/img/clients/stripe.png" alt="" />
+          </div>
+          <div className="item wow zoomIn">
+            <img src="/img/clients/paypal.png" alt="" />
+          </div>
+          <div className="item wow zoomIn">
+            <img src="/img/clients/mailchimp.png" alt="" />
+          </div>
+        </div>
+      </div> id 
+    </div> 
+  </main>
+
+ 
+     </div>
     );
 }
 
