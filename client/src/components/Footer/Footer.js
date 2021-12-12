@@ -67,7 +67,7 @@ const Footer = () => {
                             <div className="de-flex">
                                 <div className="de-flex-col">
                                     <a href="02_dark-index.html">
-                                        <img alt="" className="f-logo" src="images/logo-light.png" /><span className="copy">&copy; Copyright 2021 - Gigaland by Designesia</span>
+                                        <img alt="" className="f-logo" src="/images/logo-light.png" /><span className="copy">&copy; Copyright 2021 - Gigaland by Designesia</span>
                                     </a>
                                 </div>
                                 <div className="de-flex-col">

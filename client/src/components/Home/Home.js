@@ -21,7 +21,7 @@ const Home = () => {
                                 <div className="mb-sm-30"></div>
                             </div>
                             <div className="col-md-6 xs-hide">
-                                <img src="images/misc/nft.png" className="lazy img-fluid wow fadeIn" data-wow-delay="1.25s" alt="" />
+                                <img src="/images/misc/nft.png" className="lazy img-fluid wow fadeIn" data-wow-delay="1.25s" alt="" />
                             </div>
                         </div>
                     </div>
@@ -73,14 +73,16 @@ const Home = () => {
                                 <div className="small-border bg-color-2"></div>
                             </div>
                         </div>
+                      
+
                         <div id="collection-carousel" className="owl-carousel wow fadeIn">
 
                             <div className="nft_coll">
                                 <div className="nft_wrap">
-                                    <a href="02_dark-collection.html"><img src="images/collections/coll-1.jpg" className="lazy img-fluid" alt="" /></a>
+                                    <a href="02_dark-collection.html"><img src="/images/collections/coll-1.jpg" className="lazy img-fluid" alt="" /></a>
                                 </div>
                                 <div className="nft_coll_pp">
-                                    <a href="02_dark-collection.html"><img className="lazy pp-coll" src="images/author/author-1.jpg" alt="" /></a>
+                                    <a href="02_dark-collection.html"><img className="lazy pp-coll" src="/images/author/author-1.jpg" alt="" /></a>
                                     <i className="fa fa-check"></i>
                                 </div>
                                 <div className="nft_coll_info">
@@ -91,10 +93,10 @@ const Home = () => {
 
                             <div className="nft_coll">
                                 <div className="nft_wrap">
-                                    <a href="02_dark-collection.html"><img src="images/collections/coll-2.jpg" className="lazy img-fluid" alt="" /></a>
+                                    <a href="02_dark-collection.html"><img src="/images/collections/coll-2.jpg" className="lazy img-fluid" alt="" /></a>
                                 </div>
                                 <div className="nft_coll_pp">
-                                    <a href="02_dark-collection.html"><img className="lazy pp-coll" src="images/author/author-2.jpg" alt="" /></a>
+                                    <a href="02_dark-collection.html"><img className="lazy pp-coll" src="/images/author/author-2.jpg" alt="" /></a>
                                     <i className="fa fa-check"></i>
                                 </div>
                                 <div className="nft_coll_info">
@@ -105,10 +107,10 @@ const Home = () => {
 
                             <div className="nft_coll">
                                 <div className="nft_wrap">
-                                    <a href="02_dark-collection.html"><img src="images/collections/coll-3.jpg" className="lazy img-fluid" alt="" /></a>
+                                    <a href="02_dark-collection.html"><img src="/images/collections/coll-3.jpg" className="lazy img-fluid" alt="" /></a>
                                 </div>
                                 <div className="nft_coll_pp">
-                                    <a href="02_dark-collection.html"><img className="lazy pp-coll" src="images/author/author-3.jpg" alt="" /></a>
+                                    <a href="02_dark-collection.html"><img className="lazy pp-coll" src="/images/author/author-3.jpg" alt="" /></a>
                                     <i className="fa fa-check"></i>
                                 </div>
                                 <div className="nft_coll_info">
@@ -119,10 +121,10 @@ const Home = () => {
 
                             <div className="nft_coll">
                                 <div className="nft_wrap">
-                                    <a href="02_dark-collection.html"><img src="images/collections/coll-4.jpg" className="lazy img-fluid" alt="" /></a>
+                                    <a href="02_dark-collection.html"><img src="/images/collections/coll-4.jpg" className="lazy img-fluid" alt="" /></a>
                                 </div>
                                 <div className="nft_coll_pp">
-                                    <a href="02_dark-collection.html"><img className="lazy pp-coll" src="images/author/author-4.jpg" alt="" /></a>
+                                    <a href="02_dark-collection.html"><img className="lazy pp-coll" src="/images/author/author-4.jpg" alt="" /></a>
                                     <i className="fa fa-check"></i>
                                 </div>
                                 <div className="nft_coll_info">
@@ -133,10 +135,10 @@ const Home = () => {
 
                             <div className="nft_coll">
                                 <div className="nft_wrap">
-                                    <a href="02_dark-collection.html"><img src="images/collections/coll-5.jpg" className="lazy img-fluid" alt="" /></a>
+                                    <a href="02_dark-collection.html"><img src="/images/collections/coll-5.jpg" className="lazy img-fluid" alt="" /></a>
                                 </div>
                                 <div className="nft_coll_pp">
-                                    <a href="02_dark-collection.html"><img className="lazy pp-coll" src="images/author/author-5.jpg" alt="" /></a>
+                                    <a href="02_dark-collection.html"><img className="lazy pp-coll" src="/images/author/author-5.jpg" alt="" /></a>
                                     <i className="fa fa-check"></i>
                                 </div>
                                 <div className="nft_coll_info">
@@ -147,10 +149,10 @@ const Home = () => {
 
                             <div className="nft_coll">
                                 <div className="nft_wrap">
-                                    <a href="02_dark-collection.html"><img src="images/collections/coll-6.jpg" className="lazy img-fluid" alt="" /></a>
+                                    <a href="02_dark-collection.html"><img src="/images/collections/coll-6.jpg" className="lazy img-fluid" alt="" /></a>
                                 </div>
                                 <div className="nft_coll_pp">
-                                    <a href="02_dark-collection.html"><img className="lazy pp-coll" src="images/author/author-6.jpg" alt="" /></a>
+                                    <a href="02_dark-collection.html"><img className="lazy pp-coll" src="/images/author/author-6.jpg" alt="" /></a>
                                     <i className="fa fa-check"></i>
                                 </div>
                                 <div className="nft_coll_info">
@@ -173,14 +175,14 @@ const Home = () => {
                                 <div className="small-border bg-color-2"></div>
                             </div>
                         </div>
-                        <div id="items-carousel" className="owl-carousel wow fadeIn">
+                        <div id="/items-carousel" className="owl-carousel wow fadeIn">
 
                             <div className="d-item">
                                 <div className="nft__item">
                                     <div className="de_countdown" data-year="2021" data-month="12" data-day="16" data-hour="8"></div>
                                     <div className="author_list_pp">
                                         <a href="02_dark-author.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Creator: Monica Lucas">
-                                            <img className="lazy" src="images/author/author-1.jpg" alt="" />
+                                            <img className="lazy" src="/images/author/author-1.jpg" alt="" />
                                             <i className="fa fa-check"></i>
                                         </a>
                                     </div>
@@ -197,7 +199,7 @@ const Home = () => {
                                             </div>
                                         </div>
                                         <a href="02_dark-item-details.html">
-                                            <img src="images/items/static-1.jpg" className="lazy nft__item_preview" alt="" />
+                                            <img src="/images/items/static-1.jpg" className="lazy nft__item_preview" alt="" />
                                         </a>
                                     </div>
                                     <div className="nft__item_info">
@@ -223,7 +225,7 @@ const Home = () => {
                                 <div className="nft__item">
                                     <div className="author_list_pp">
                                         <a href="02_dark-author.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Creator: Stacy Long">
-                                            <img className="lazy" src="images/author/author-10.jpg" alt="" />
+                                            <img className="lazy" src="/images/author/author-10.jpg" alt="" />
                                             <i className="fa fa-check"></i>
                                         </a>
                                     </div>
@@ -240,7 +242,7 @@ const Home = () => {
                                             </div>
                                         </div>
                                         <a href="02_dark-item-details.html">
-                                            <img src="images/items/static-2.jpg" className="lazy nft__item_preview" alt="" />
+                                            <img src="/images/items/static-2.jpg" className="lazy nft__item_preview" alt="" />
                                         </a>
                                     </div>
                                     <div className="nft__item_info">
@@ -267,7 +269,7 @@ const Home = () => {
                                     <div className="de_countdown" data-year="2021" data-month="12" data-day="14" data-hour="8"></div>
                                     <div className="author_list_pp">
                                         <a href="02_dark-author.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Creator: Ida Chapman">
-                                            <img className="lazy" src="images/author/author-11.jpg" alt="" />
+                                            <img className="lazy" src="/images/author/author-11.jpg" alt="" />
                                             <i className="fa fa-check"></i>
                                         </a>
                                     </div>
@@ -284,7 +286,7 @@ const Home = () => {
                                             </div>
                                         </div>
                                         <a href="02_dark-item-details.html">
-                                            <img src="images/items/static-3.jpg" className="lazy nft__item_preview" alt="" />
+                                            <img src="/images/items/static-3.jpg" className="lazy nft__item_preview" alt="" />
                                         </a>
                                     </div>
                                     <div className="nft__item_info">
@@ -310,7 +312,7 @@ const Home = () => {
                                 <div className="nft__item">
                                     <div className="author_list_pp">
                                         <a href="02_dark-author.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Creator: Fred Ryan">
-                                            <img className="lazy" src="images/author/author-12.jpg" alt="" />
+                                            <img className="lazy" src="/images/author/author-12.jpg" alt="" />
                                             <i className="fa fa-check"></i>
                                         </a>
                                     </div>
@@ -327,7 +329,7 @@ const Home = () => {
                                             </div>
                                         </div>
                                         <a href="02_dark-item-details.html">
-                                            <img src="images/items/static-4.jpg" className="lazy nft__item_preview" alt="" />
+                                            <img src="/images/items/static-4.jpg" className="lazy nft__item_preview" alt="" />
                                         </a>
                                     </div>
                                     <div className="nft__item_info">
@@ -353,7 +355,7 @@ const Home = () => {
                                 <div className="nft__item">
                                     <div className="author_list_pp">
                                         <a href="02_dark-author.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Creator: Franklin Greer">
-                                            <img className="lazy" src="images/author/author-9.jpg" alt="" />
+                                            <img className="lazy" src="/images/author/author-9.jpg" alt="" />
                                             <i className="fa fa-check"></i>
                                         </a>
                                     </div>
@@ -370,7 +372,7 @@ const Home = () => {
                                             </div>
                                         </div>
                                         <a href="02_dark-item-details.html">
-                                            <img src="images/items/anim-4.webp" className="lazy nft__item_preview" alt="" />
+                                            <img src="/images/items/anim-4.webp" className="lazy nft__item_preview" alt="" />
                                         </a>
                                     </div>
                                     <div className="nft__item_info">
@@ -397,7 +399,7 @@ const Home = () => {
                                     <div className="de_countdown" data-year="2021" data-month="12" data-day="6" data-hour="8"></div>
                                     <div className="author_list_pp">
                                         <a href="02_dark-author.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Creator: Mamie Barnett">
-                                            <img className="lazy" src="images/author/author-2.jpg" alt="" />
+                                            <img className="lazy" src="/images/author/author-2.jpg" alt="" />
                                             <i className="fa fa-check"></i>
                                         </a>
                                     </div>
@@ -414,7 +416,7 @@ const Home = () => {
                                             </div>
                                         </div>
                                         <a href="02_dark-item-details.html">
-                                            <img src="images/items/anim-2.webp" className="lazy nft__item_preview" alt="" />
+                                            <img src="/images/items/anim-2.webp" className="lazy nft__item_preview" alt="" />
                                         </a>
                                     </div>
                                     <div className="nft__item_info">
@@ -440,7 +442,7 @@ const Home = () => {
                                 <div className="nft__item">
                                     <div className="author_list_pp">
                                         <a href="02_dark-author.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Creator: Nicholas Daniels">
-                                            <img className="lazy" src="images/author/author-3.jpg" alt="" />
+                                            <img className="lazy" src="/images/author/author-3.jpg" alt="" />
                                             <i className="fa fa-check"></i>
                                         </a>
                                     </div>
@@ -457,7 +459,7 @@ const Home = () => {
                                             </div>
                                         </div>
                                         <a href="02_dark-item-details.html">
-                                            <img src="images/items/anim-1.webp" className="lazy nft__item_preview" alt="" />
+                                            <img src="/images/items/anim-1.webp" className="lazy nft__item_preview" alt="" />
                                         </a>
                                     </div>
                                     <div className="nft__item_info">
@@ -499,7 +501,7 @@ const Home = () => {
                                 <li>
                                     <div className="author_list_pp">
                                         <a href="02_dark-author.html">
-                                            <img className="lazy" src="images/author/author-1.jpg" alt="" />
+                                            <img className="lazy" src="/images/author/author-1.jpg" alt="" />
                                             <i className="fa fa-check"></i>
                                         </a>
                                     </div>
@@ -511,7 +513,7 @@ const Home = () => {
                                 <li>
                                     <div className="author_list_pp">
                                         <a href="02_dark-author.html">
-                                            <img className="lazy pp-author" src="images/author/author-2.jpg" alt="" />
+                                            <img className="lazy pp-author" src="/images/author/author-2.jpg" alt="" />
                                             <i className="fa fa-check"></i>
                                         </a>
                                     </div>
@@ -523,7 +525,7 @@ const Home = () => {
                                 <li>
                                     <div className="author_list_pp">
                                         <a href="02_dark-author.html">
-                                            <img className="lazy pp-author" src="images/author/author-3.jpg" alt="" />
+                                            <img className="lazy pp-author" src="/images/author/author-3.jpg" alt="" />
                                             <i className="fa fa-check"></i>
                                         </a>
                                     </div>
@@ -535,7 +537,7 @@ const Home = () => {
                                 <li>
                                     <div className="author_list_pp">
                                         <a href="02_dark-author.html">
-                                            <img className="lazy pp-author" src="images/author/author-4.jpg" alt="" />
+                                            <img className="lazy pp-author" src="/images/author/author-4.jpg" alt="" />
                                             <i className="fa fa-check"></i>
                                         </a>
                                     </div>
@@ -547,7 +549,7 @@ const Home = () => {
                                 <li>
                                     <div className="author_list_pp">
                                         <a href="02_dark-author.html">
-                                            <img className="lazy pp-author" src="images/author/author-5.jpg" alt="" />
+                                            <img className="lazy pp-author" src="/images/author/author-5.jpg" alt="" />
                                             <i className="fa fa-check"></i>
                                         </a>
                                     </div>
@@ -559,7 +561,7 @@ const Home = () => {
                                 <li>
                                     <div className="author_list_pp">
                                         <a href="02_dark-author.html">
-                                            <img className="lazy pp-author" src="images/author/author-6.jpg" alt="" />
+                                            <img className="lazy pp-author" src="/images/author/author-6.jpg" alt="" />
                                             <i className="fa fa-check"></i>
                                         </a>
                                     </div>
@@ -571,7 +573,7 @@ const Home = () => {
                                 <li>
                                     <div className="author_list_pp">
                                         <a href="02_dark-author.html">
-                                            <img className="lazy pp-author" src="images/author/author-7.jpg" alt="" />
+                                            <img className="lazy pp-author" src="/images/author/author-7.jpg" alt="" />
                                             <i className="fa fa-check"></i>
                                         </a>
                                     </div>
@@ -583,7 +585,7 @@ const Home = () => {
                                 <li>
                                     <div className="author_list_pp">
                                         <a href="02_dark-author.html">
-                                            <img className="lazy pp-author" src="images/author/author-8.jpg" alt="" />
+                                            <img className="lazy pp-author" src="/images/author/author-8.jpg" alt="" />
                                             <i className="fa fa-check"></i>
                                         </a>
                                     </div>
@@ -595,7 +597,7 @@ const Home = () => {
                                 <li>
                                     <div className="author_list_pp">
                                         <a href="02_dark-author.html">
-                                            <img className="lazy pp-author" src="images/author/author-9.jpg" alt="" />
+                                            <img className="lazy pp-author" src="/images/author/author-9.jpg" alt="" />
                                             <i className="fa fa-check"></i>
                                         </a>
                                     </div>
@@ -607,7 +609,7 @@ const Home = () => {
                                 <li>
                                     <div className="author_list_pp">
                                         <a href="02_dark-author.html">
-                                            <img className="lazy pp-author" src="images/author/author-10.jpg" alt="" />
+                                            <img className="lazy pp-author" src="/images/author/author-10.jpg" alt="" />
                                             <i className="fa fa-check"></i>
                                         </a>
                                     </div>
@@ -619,7 +621,7 @@ const Home = () => {
                                 <li>
                                     <div className="author_list_pp">
                                         <a href="02_dark-author.html">
-                                            <img className="lazy pp-author" src="images/author/author-11.jpg" alt="" />
+                                            <img className="lazy pp-author" src="/images/author/author-11.jpg" alt="" />
                                             <i className="fa fa-check"></i>
                                         </a>
                                     </div>
@@ -631,7 +633,7 @@ const Home = () => {
                                 <li>
                                     <div className="author_list_pp">
                                         <a href="02_dark-author.html">
-                                            <img className="lazy pp-author" src="images/author/author-12.jpg" alt="" />
+                                            <img className="lazy pp-author" src="/images/author/author-12.jpg" alt="" />
                                             <i className="fa fa-check"></i>
                                         </a>
                                     </div>
@@ -655,37 +657,37 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="col-md-2 col-sm-4 col-6 mb-sm-30 wow fadeInRight" data-wow-delay=".1s">
-                            <a href="02_dark-explore.html" className="icon-box style-2 rounded">
+                            <a href="02_dark-explore.html" className="/icon-box style-2 rounded">
                                 <i className="fa fa-image"></i>
                                 <span>Art</span>
                             </a>
                         </div>
                         <div className="col-md-2 col-sm-4 col-6 mb-sm-30 wow fadeInRight" data-wow-delay=".2s">
-                            <a href="02_dark-explore.html" className="icon-box style-2 rounded">
+                            <a href="02_dark-explore.html" className="/icon-box style-2 rounded">
                                 <i className="fa fa-music"></i>
                                 <span>Music</span>
                             </a>
                         </div>
                         <div className="col-md-2 col-sm-4 col-6 mb-sm-30 wow fadeInRight" data-wow-delay=".3s">
-                            <a href="02_dark-explore.html" className="icon-box style-2 rounded">
+                            <a href="02_dark-explore.html" className="/icon-box style-2 rounded">
                                 <i className="fa fa-search"></i>
                                 <span>Domain Names</span>
                             </a>
                         </div>
                         <div className="col-md-2 col-sm-4 col-6 mb-sm-30 wow fadeInRight" data-wow-delay=".4s">
-                            <a href="02_dark-explore.html" className="icon-box style-2 rounded">
+                            <a href="02_dark-explore.html" className="/icon-box style-2 rounded">
                                 <i className="fa fa-globe"></i>
                                 <span>Virtual Worlds</span>
                             </a>
                         </div>
                         <div className="col-md-2 col-sm-4 col-6 mb-sm-30 wow fadeInRight" data-wow-delay=".5s">
-                            <a href="02_dark-explore.html" className="icon-box style-2 rounded">
+                            <a href="02_dark-explore.html" className="/icon-box style-2 rounded">
                                 <i className="fa fa-vcard"></i>
                                 <span>Trading Cards</span>
                             </a>
                         </div>
                         <div className="col-md-2 col-sm-4 col-6 mb-sm-30 wow fadeInRight" data-wow-delay=".6s">
-                            <a href="02_dark-explore.html" className="icon-box style-2 rounded">
+                            <a href="02_dark-explore.html" className="/icon-box style-2 rounded">
                                 <i className="fa fa-th"></i>
                                 <span>Collectibles</span>
                             </a>

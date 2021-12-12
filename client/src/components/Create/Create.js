@@ -31,7 +31,7 @@ const Create = () => {
         <div className="no-bottom no-top" id="content">
             <div id="top"></div>
 
-            <section id="subheader" className="text-light" data-bgimage="url(images/background/subheader-dark.jpg) top">
+            <section id="subheader" className="text-light" data-bgimage="url(/images/background/subheader-dark.jpg) top">
                 <div className="center-y relative text-center">
                     <div className="container">
                         <div className="row">

@@ -34,7 +34,7 @@ const Login = () => {
         <div className="no-bottom no-top" id="content">
         <div id="top"></div>
         
-        <section className="full-height relative no-top no-bottom vertical-center" data-bgimage="url(images/background/subheader-dark.jpg) top" data-stellar-background-ratio=".5">
+        <section className="full-height relative no-top no-bottom vertical-center" data-bgimage="url(/images/background/subheader-dark.jpg) top" data-stellar-background-ratio=".5">
             <div className="overlay-gradient t50">
                 <div className="center-y relative">
                     <div className="container">

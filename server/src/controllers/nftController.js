@@ -9,8 +9,9 @@ router.post('/create', async (req, res) => {
 });
 
 router.get('/all', async (req, res) => {
+    let nfts = await nftService.getAll();
 
-    res.json({ok: true});
+    res.json({ nfts });
 });
 
 module.exports = router;

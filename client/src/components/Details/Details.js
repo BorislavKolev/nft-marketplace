@@ -8,7 +8,7 @@ const Details = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6 text-center">
-                            <img src="images/items/big-4.jpg" className="img-fluid img-rounded mb-sm-30" alt=""/>
+                            <img src="/images/items/big-4.jpg" className="img-fluid img-rounded mb-sm-30" alt=""/>
                         </div>
                         <div className="col-md-6">
                             <div className="item_info">
@@ -27,7 +27,7 @@ const Details = () => {
                                         <div className="item_author">                                    
                                             <div className="author_list_pp">
                                                 <a href="02_dark-author.html">
-                                                    <img className="lazy" src="images/author/author-1.jpg" alt=""/>
+                                                    <img className="lazy" src="/images/author/author-1.jpg" alt=""/>
                                                     <i className="fa fa-check"></i>
                                                 </a>
                                             </div>                                    
@@ -41,7 +41,7 @@ const Details = () => {
                                         <div className="item_author">                                    
                                             <div className="author_list_pp">
                                                 <a href="02_dark-collection.html">
-                                                    <img className="lazy" src="images/collections/coll-thumbnail-1.jpg" alt=""/>
+                                                    <img className="lazy" src="/images/collections/coll-thumbnail-1.jpg" alt=""/>
                                                     <i className="fa fa-check"></i>
                                                 </a>
                                             </div>                                    
@@ -68,7 +68,7 @@ const Details = () => {
                                         <div className="item_author">                                    
                                             <div className="author_list_pp">
                                                 <a href="02_dark-author.html">
-                                                    <img className="lazy" src="images/author/author-10.jpg" alt=""/>
+                                                    <img className="lazy" src="/images/author/author-10.jpg" alt=""/>
                                                     <i className="fa fa-check"></i>
                                                 </a>
                                             </div>                                    
@@ -151,7 +151,7 @@ const Details = () => {
                                         <div className="p_list">
                                             <div className="p_list_pp">
                                                 <a href="02_dark-author.html">
-                                                    <img className="lazy" src="images/author/author-1.jpg" alt=""/>
+                                                    <img className="lazy" src="/images/author/author-1.jpg" alt=""/>
                                                     <i className="fa fa-check"></i>
                                                 </a>
                                             </div>                                    
@@ -164,7 +164,7 @@ const Details = () => {
                                         <div className="p_list">
                                             <div className="p_list_pp">
                                                 <a href="02_dark-author.html">
-                                                    <img className="lazy" src="images/author/author-2.jpg" alt=""/>
+                                                    <img className="lazy" src="/images/author/author-2.jpg" alt=""/>
                                                     <i className="fa fa-check"></i>
                                                 </a>
                                             </div>                                    
@@ -177,7 +177,7 @@ const Details = () => {
                                         <div className="p_list">
                                             <div className="p_list_pp">
                                                 <a href="02_dark-author.html">
-                                                    <img className="lazy" src="images/author/author-3.jpg" alt=""/>
+                                                    <img className="lazy" src="/images/author/author-3.jpg" alt=""/>
                                                     <i className="fa fa-check"></i>
                                                 </a>
                                             </div>                                    
@@ -190,7 +190,7 @@ const Details = () => {
                                         <div className="p_list">
                                             <div className="p_list_pp">
                                                 <a href="02_dark-author.html">
-                                                    <img className="lazy" src="images/author/author-4.jpg" alt=""/>
+                                                    <img className="lazy" src="/images/author/author-4.jpg" alt=""/>
                                                     <i className="fa fa-check"></i>
                                                 </a>
                                             </div>                                    
@@ -205,7 +205,7 @@ const Details = () => {
                                         <div className="p_list">
                                             <div className="p_list_pp">
                                                 <a href="02_dark-author.html">
-                                                    <img className="lazy" src="images/author/author-5.jpg" alt=""/>
+                                                    <img className="lazy" src="/images/author/author-5.jpg" alt=""/>
                                                     <i className="fa fa-check"></i>
                                                 </a>
                                             </div>                                    
@@ -218,7 +218,7 @@ const Details = () => {
                                         <div className="p_list">
                                             <div className="p_list_pp">
                                                 <a href="02_dark-author.html">
-                                                    <img className="lazy" src="images/author/author-1.jpg" alt=""/>
+                                                    <img className="lazy" src="/images/author/author-1.jpg" alt=""/>
                                                     <i className="fa fa-check"></i>
                                                 </a>
                                             </div>                                    
@@ -231,7 +231,7 @@ const Details = () => {
                                         <div className="p_list">
                                             <div className="p_list_pp">
                                                 <a href="02_dark-author.html">
-                                                    <img className="lazy" src="images/author/author-2.jpg" alt=""/>
+                                                    <img className="lazy" src="/images/author/author-2.jpg" alt=""/>
                                                     <i className="fa fa-check"></i>
                                                 </a>
                                             </div>                                    
@@ -244,7 +244,7 @@ const Details = () => {
                                         <div className="p_list">
                                             <div className="p_list_pp">
                                                 <a href="02_dark-author.html">
-                                                    <img className="lazy" src="images/author/author-3.jpg" alt=""/>
+                                                    <img className="lazy" src="/images/author/author-3.jpg" alt=""/>
                                                     <i className="fa fa-check"></i>
                                                 </a>
                                             </div>                                    
@@ -257,7 +257,7 @@ const Details = () => {
                                         <div className="p_list">
                                             <div className="p_list_pp">
                                                 <a href="02_dark-author.html">
-                                                    <img className="lazy" src="images/author/author-4.jpg" alt=""/>
+                                                    <img className="lazy" src="/images/author/author-4.jpg" alt=""/>
                                                     <i className="fa fa-check"></i>
                                                 </a>
                                             </div>                                    

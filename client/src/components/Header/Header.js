@@ -32,7 +32,7 @@ const Header = () => {
                                 <div className="de-flex-col">
                                     <div id="logo">
                                         <Link to="/">
-                                            <img alt="" src="images/logo-light.png" />
+                                            <img alt="" src="/images/logo-light.png" />
                                         </Link>
                                     </div>
                                 </div>
