@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate, Link } from 'react-router-dom';
 
 import * as nftService from '../../services/nftService';
 
@@ -21,6 +21,21 @@ const Details = () => {
                 console.log(err);
             })
     }, []);
+
+    const ownerButtons = (
+      <>
+          <Link to={`/edit/${nft._id}`} className="btn btn-outline border ml-1">Edit</Link>
+          <a href="#" className="btn btn-outline border ml-1">Delete</a>
+      </>
+  );
+
+  const userButtons = (
+    <>
+         <a href="#" className="btn btn-primary border ml-1">Like</a>
+          <a href="#" className="btn btn-primary border ml-1">Buy</a>
+    </>
+);
+
 
     return(
         <div className="page-section">
@@ -50,10 +65,12 @@ const Details = () => {
                   </span> <a>Price: {nft.price} ETH</a>
                 </div>
                
-              <a href="#" className="btn btn-primary border ml-1">Like</a>
-              <a href="#" className="btn btn-primary border ml-1">Buy</a>
-              <a href="#" className="btn btn-outline border ml-1">Edit</a>
-              <a href="#" className="btn btn-outline border ml-1">Delete</a>
+                {user._id && (user._id == nft.owner
+                            ? ownerButtons
+                            : userButtons
+                )}
+
+            
             </div>
           </div>
         </div>

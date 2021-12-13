@@ -10,6 +10,7 @@ import Explore from './components/Explore';
 import Create from './components/Create';
 import Logout from './components/Logout';
 import Details from './components/Details';
+import Edit from './components/Edit';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/logout" element={<Logout />} />
         <Route path="/details/:nftId" element={<Details />} />
+        <Route path="/edit/:nftId" element={<Edit />} />
       </Routes>
 
       <Footer />

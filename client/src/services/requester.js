@@ -1,5 +1,19 @@
-export const request = (url) => {
-    return fetch(url).then(responseHandler)
+export const request = async (method, url, data) => {
+    let result = null;
+
+    if (method == 'GET') {
+        result = fetch(url);
+    } else {
+        result = fetch(url, {
+            method,
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        });
+    }
+    
+    return result.then(responseHandler);
 };
 
 async function responseHandler(res) {
@@ -11,3 +25,7 @@ async function responseHandler(res) {
         throw jsonData;
     }
 }
+
+export const get = request.bind(null, 'GET');
+export const put = request.bind(null, 'PUT');
+export const post = request.bind(null, 'POST');

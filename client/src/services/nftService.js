@@ -1,8 +1,8 @@
-import { request } from './requester';
+import * as request from './requester';
 
 const baseUrl = 'http://localhost:3030/nfts';
 
-export const getAll = () => request(`${baseUrl}/all`)
+export const getAll = () => request.get(`${baseUrl}/all`)
 
 export const create = async (nftData) => {
     let response = await fetch(`${baseUrl}/create`, {
@@ -22,3 +22,5 @@ export const getOne = (nftId) => {
     return fetch(`${baseUrl}/${nftId}/details`)
         .then(res => res.json())
 };
+
+export const update = (nftId, nftData) => request.post(`${baseUrl}/${nftId}/update`, nftData);

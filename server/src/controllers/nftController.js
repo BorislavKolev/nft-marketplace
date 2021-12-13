@@ -20,4 +20,10 @@ router.get('/:nftId/details', async (req, res) => {
     res.json({ nft });
 });
 
+router.post('/:nftId/update', async (req, res) => {
+        await nftService.updateOne(req.params.nftId, req.body);
+
+        res.json({ok: true});
+});
+
 module.exports = router;
