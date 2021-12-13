@@ -24,3 +24,7 @@ export const getOne = (nftId) => {
 };
 
 export const update = (nftId, nftData) => request.post(`${baseUrl}/${nftId}/update`, nftData);
+
+export const remove = (nftId) => {
+    request.get(`${baseUrl}/${nftId}/remove`)
+};

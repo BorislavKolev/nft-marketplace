@@ -22,10 +22,18 @@ const Details = () => {
             })
     }, []);
 
+    const onClickDeleteHandler = (e) => {
+      e.preventDefault();
+
+      nftService.remove(nftId)
+
+      navigate('/explore');    
+  };
+
     const ownerButtons = (
       <>
           <Link to={`/edit/${nft._id}`} className="btn btn-outline border ml-1">Edit</Link>
-          <a href="#" className="btn btn-outline border ml-1">Delete</a>
+          <a href="#" className="btn btn-outline border ml-1" onClick={onClickDeleteHandler}>Delete</a>
       </>
   );
 

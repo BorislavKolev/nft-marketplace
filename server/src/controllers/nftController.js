@@ -26,4 +26,13 @@ router.post('/:nftId/update', async (req, res) => {
         res.json({ok: true});
 });
 
+router.get('/:nftId/remove', async (req, res) => {
+    console.log('in contr serv112')
+
+    await nftService.delete(req.params.nftId);
+    console.log('in contr serv')
+
+    res.json({ok: true});
+});
+
 module.exports = router;

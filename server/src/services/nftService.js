@@ -20,3 +20,5 @@ exports.getAll = () => Nft.find().lean();
 exports.getOne = (nftId) => Nft.findById(nftId).populate('favourites');
 
 exports.updateOne = (nftId, nftData) => Nft.findByIdAndUpdate(nftId, nftData);
+
+exports.delete = (nftId) => Nft.findByIdAndDelete(nftId);
