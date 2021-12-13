@@ -17,3 +17,8 @@ export const create = async (nftData) => {
 
     return result;
 };
+
+export const getOne = (nftId) => {
+    return fetch(`${baseUrl}/${nftId}/details`)
+        .then(res => res.json())
+};

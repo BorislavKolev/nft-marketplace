@@ -1713,6 +1713,17 @@ a.text-dark:hover, a.text-dark:focus {
   box-shadow: 0 2px 6px rgba(100, 95, 136, 0.16);
 }
 
+.card-blog2 {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  padding: 32px 20px 70px 20px;
+  max-width: 450px;
+  min-height: 450px;
+  border-radius: 6px;
+  box-shadow: 0 5px 10px rgba(100, 95, 136, 0.26);
+}
+
 .card-blog .header {
   margin-bottom: 16px;
 }
@@ -1785,6 +1796,22 @@ a.text-dark:hover, a.text-dark:focus {
   overflow: hidden;
 }
 
+.testi-image2 {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 400px;
+  height: 400px;
+  background-color: #645F88;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+
+.testi-image2 img {
+  width: 100%;
+  height: auto;
+} 
 .testi-image img {
   width: 100%;
   height: auto;

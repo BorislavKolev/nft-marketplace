@@ -24,7 +24,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/logout" element={<Logout />} />
-        <Route path="/details" element={<Details />} />
+        <Route path="/details/:nftId" element={<Details />} />
       </Routes>
 
       <Footer />

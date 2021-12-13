@@ -16,3 +16,5 @@ exports.create = async (nftData) => {
 };
 
 exports.getAll = () => Nft.find().lean();
+
+exports.getOne = (nftId) => Nft.findById(nftId).populate('favourites');

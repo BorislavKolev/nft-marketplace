@@ -14,4 +14,10 @@ router.get('/all', async (req, res) => {
     res.json({ nfts });
 });
 
+router.get('/:nftId/details', async (req, res) => {
+    let nft = await nftService.getOne(req.params.nftId);
+
+    res.json({ nft });
+});
+
 module.exports = router;

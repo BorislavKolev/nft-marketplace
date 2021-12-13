@@ -17,7 +17,7 @@ const NftCard = ({
             </div>
           </div>          
           <div className="footer">
-            <a href="blog-single.html">Details <span className="mai-chevron-forward text-sm"></span></a>
+            <Link className="btn btn-primary border ml-1" to={`/details/${nft._id}`}>Details <span className="mai-chevron-forward text-sm"></span></Link>
           </div>
         </div>
       </div>
