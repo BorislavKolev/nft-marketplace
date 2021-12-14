@@ -43,4 +43,10 @@ router.post('/logout', async (req, res) => {
     res.json({ok: true});
 });
 
+router.get('/:userId/details', async (req, res) => {
+    let user = await authService.getOne(req.params.userId);
+
+    res.json({ user });
+});
+
 module.exports = router;

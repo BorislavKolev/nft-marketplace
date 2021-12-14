@@ -1,7 +1,7 @@
-const baseUrl = 'http://localhost:3030';
+const baseUrl = 'http://localhost:3030/auth';
 
 export const login = async (email, password) => {
-    let res = await fetch(`${baseUrl}/auth/login`, {
+    let res = await fetch(`${baseUrl}/login`, {
         method: 'POST',
         headers: {
             'content-type': 'application/json'
@@ -23,7 +23,7 @@ export const register = (username, email, password, repassword) => {
         throw new Error("Password and Repeat Password should match");
     }
 
-    return fetch(`${baseUrl}/auth/register`, {
+    return fetch(`${baseUrl}/register`, {
         method: 'POST',
         headers: {
             'content-type': 'application/json'
@@ -35,7 +35,7 @@ export const register = (username, email, password, repassword) => {
 
 
 export const logout = (token) => {
-    return fetch(`${baseUrl}/auth/logout`, {
+    return fetch(`${baseUrl}/logout`, {
         method: 'POST',
         headers: {
             'content-type': 'application/json'
@@ -53,4 +53,9 @@ export const getUser = () => {
 
 export const isAuthenticated = () => {
     return Boolean(getUser())
+};
+
+export const getOne = (userId) => {
+    return fetch(`${baseUrl}/${userId}/details`)
+        .then(res => res.json())
 };

@@ -10,7 +10,7 @@ export const create = async (nftData) => {
         headers: {
             'content-type': 'application/json'
         },
-        body: JSON.stringify({...nftData})
+        body: JSON.stringify({ ...nftData })
     });
 
     let result = await response.json();
@@ -28,3 +28,15 @@ export const update = (nftId, nftData) => request.post(`${baseUrl}/${nftId}/upda
 export const remove = async (nftId) => {
     await request.get(`${baseUrl}/${nftId}/remove`)
 };
+
+export const getCollection = async (nftCollectionAsIds) => {
+    let resultNfts = [];
+
+    for (const nftId of nftCollectionAsIds) {
+        console.log(nftId);
+        return fetch(`${baseUrl}/${nftId}/details`)
+            .then(res => resultNfts.push(res))
+    };
+
+    return resultNfts;
+}
