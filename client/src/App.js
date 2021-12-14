@@ -11,6 +11,7 @@ import Create from './components/Create';
 import Logout from './components/Logout';
 import Details from './components/Details';
 import Edit from './components/Edit';
+import Profile from './components/Profile';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
         <Route path="/logout" element={<Logout />} />
         <Route path="/details/:nftId" element={<Details />} />
         <Route path="/edit/:nftId" element={<Edit />} />
+        <Route path="/profile/:userId" element={<Profile />} />
       </Routes>
 
       <Footer />
