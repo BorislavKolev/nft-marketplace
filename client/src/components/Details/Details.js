@@ -26,8 +26,7 @@ const Details = () => {
       e.preventDefault();
 
       nftService.remove(nftId)
-
-      navigate('/explore');    
+        .then(x => navigate('/explore'));
   };
 
     const ownerButtons = (

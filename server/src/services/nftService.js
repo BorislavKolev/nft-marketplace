@@ -1,5 +1,9 @@
 const Nft = require('../models/Nft');
 const User = require('../models/User');
+const mongoose = require('mongoose');
+
+
+const authService = require('./authService');
 
 exports.create = async (nftData) => {
     await Nft.create(nftData)
@@ -7,6 +11,7 @@ exports.create = async (nftData) => {
     let creatorId = nftData.creator;
     let createdNft = await Nft.findOne({ title: nftData.title });
     let nftId = await createdNft.toObject()._id;
+    console.log('NFT created:')
     console.log(nftId)
 
     await User.findOneAndUpdate({ _id: creatorId }, { $push: { createdNfts: nftId } },
@@ -22,3 +27,38 @@ exports.getOne = (nftId) => Nft.findById(nftId).populate('favourites');
 exports.updateOne = (nftId, nftData) => Nft.findByIdAndUpdate(nftId, nftData);
 
 exports.delete = (nftId) => Nft.findByIdAndDelete(nftId);
+
+exports.removeNftFromUserCollections = async (nftId) => {
+    let deletedNft = await Nft.findById(nftId).populate('favourites');
+    let deletedNftData = await deletedNft.toObject();
+    let ownerId = deletedNftData.owner;
+    let creatorId = deletedNftData.creator;
+    let favourites = deletedNft.getFavourites();
+    let nftObjectId = mongoose.Types.ObjectId(nftId);
+    console.log('owner:')
+    console.log(ownerId);
+    console.log('creator:')
+    console.log(creatorId);
+    console.log('favourites:')
+    console.log(favourites);
+    // Removing NFT from owner collection
+    let owner = await authService.getOne(ownerId);
+    const indexOfNftInOwned = owner.ownedNfts.indexOf(nftObjectId);
+    owner.ownedNfts.splice(indexOfNftInOwned, 1);
+    let ownerData = await owner.toObject();
+    await authService.updateOne(ownerId, ownerData);
+    // Removing NFT from creator collection
+    let creator = await authService.getOne(creatorId);
+    const indexOfNftInCreated = creator.createdNfts.indexOf(nftObjectId);
+    creator.createdNfts.splice(indexOfNftInCreated, 1);
+    let creatorData = await creator.toObject();
+    await authService.updateOne(creatorId, creatorData);
+    //Removing NFT from favourites collections
+    for (const favId of favourites) {
+        let currentFavourite = await authService.getOne(favId);
+        const indexOfNftInFavourite = currentFavourite.favouriteNfts.indexOf(nftObjectId);
+        currentFavourite.favouriteNfts.splice(indexOfNftInFavourite, 1);
+        let favouriteData = await currentFavourite.toObject();
+        await authService.updateOne(favId, favouriteData);
+    };
+}

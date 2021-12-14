@@ -34,6 +34,11 @@ let nftSchema = new mongoose.Schema({
     timestamps: true,
 });
 
+nftSchema.method('getFavourites', function() {
+    let userString = this.favourites.map(x => x._id).join(', ');
+    return userArr = userString.split(', ');
+}); 
+
 let Nft = mongoose.model('Nft', nftSchema);
 
 module.exports = Nft;
