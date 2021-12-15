@@ -32,11 +32,20 @@ export const remove = async (nftId) => {
 export const getCollection = async (nftCollectionAsIds) => {
     let resultNfts = [];
 
-    for (const nftId of nftCollectionAsIds) {
-        console.log(nftId);
-        return fetch(`${baseUrl}/${nftId}/details`)
-            .then(res => resultNfts.push(res))
-    };
+    for (let i = 0; i < nftCollectionAsIds.length; i++) {
+        console.log(nftCollectionAsIds[i]);
+        fetch(`${baseUrl}/${nftCollectionAsIds[i]}/details`)
+            .then(res => res.json())
+            .then(res => resultNfts.push(res.nft));
+    }
+    console.log('in getCol');
 
+    console.log(resultNfts);
     return resultNfts;
 }
+
+export const getMyOwnedNfts = (userId) => request.get(`${baseUrl}/${userId}/ownedNfts`);
+
+export const getMyCreatedNfts = (userId) => request.get(`${baseUrl}/${userId}/createdNfts`);
+
+export const getMyFavouriteNfts = (userId) => request.get(`${baseUrl}/${userId}/favouriteNfts`);

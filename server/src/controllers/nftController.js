@@ -33,4 +33,22 @@ router.get('/:nftId/remove', async (req, res) => {
     res.json({ok: true});
 });
 
+router.get('/:userId/ownedNfts', async (req, res) => {
+    let nfts = await nftService.findNftsOwnedByUser(req.params.userId);
+
+    res.json({ nfts });
+});
+
+router.get('/:userId/createdNfts', async (req, res) => {
+    let nfts = await nftService.findNftsCreatedByUser(req.params.userId);
+
+    res.json({ nfts });
+});
+
+router.get('/:userId/favouriteNfts', async (req, res) => {
+    let nfts = await nftService.findNftsFavouritedByUser(req.params.userId);
+
+    res.json({ nfts });
+});
+
 module.exports = router;

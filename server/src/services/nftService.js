@@ -62,3 +62,10 @@ exports.removeNftFromUserCollections = async (nftId) => {
         await authService.updateOne(favId, favouriteData);
     };
 }
+
+exports.findNftsOwnedByUser = (userId) => Nft.find({owner: userId}).lean();
+
+exports.findNftsCreatedByUser = (userId) => Nft.find({creator: userId}).lean();
+
+exports.findNftsFavouritedByUser = (userId) => Nft.find({favourites: {$in: [userId]}}).lean();
+

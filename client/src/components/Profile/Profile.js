@@ -1,36 +1,37 @@
+import { useState, useEffect } from 'react';
 import NftList from '../NftList';
-import { useEffect, useState } from 'react';
-import { useParams, useNavigate, Link } from 'react-router-dom';
 
-import * as authService from '../../services/authService';
 import * as nftService from '../../services/nftService';
-
+import { useAuthContext } from '../../contexts/AuthContext';
 
 const Profile = () => {
-    const { userId } = useParams();
-    const [user, setUser] = useState({});
     const [ownedNfts, setOwnedNfts] = useState([]);
-    const [favouriteNfts, setFavouriteNfts] = useState([]);
     const [createdNfts, setCreatedNfts] = useState([]);
+    const [favouriteNfts, setFavouriteNfts] = useState([]);
+
+    const { user } = useAuthContext();
 
     useEffect(() => {
-        authService.getOne(userId)
-            .then(result => {
-                setUser(result.user);
-            })
-            .catch(err => {
-                console.log(err);
-            })
-
-        nftService.getCollection(user.ownedNfts)
-            .then(result => {
-                setOwnedNfts(result)
-            })
-            .catch(err => {
-                console.log(err);
-            })
+        nftService.getMyOwnedNfts(user._id)
+            .then(nftResult => {
+                setOwnedNfts(nftResult[0]);
+            });
     }, []);
-    
+
+    useEffect(() => {
+        nftService.getMyCreatedNfts(user._id)
+            .then(nftResult => {
+                setCreatedNfts(nftResult[0]);
+            });
+    }, []);
+
+    useEffect(() => {
+        nftService.getMyFavouriteNfts(user._id)
+            .then(nftResult => {
+                setFavouriteNfts(nftResult[0]);
+            });
+    }, []);
+
     return (
         <div className="page-section border-top">
             <div className="container">

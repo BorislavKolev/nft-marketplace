@@ -58,4 +58,5 @@ export const isAuthenticated = () => {
 export const getOne = (userId) => {
     return fetch(`${baseUrl}/${userId}/details`)
         .then(res => res.json())
+        .then(res => res.user)
 };

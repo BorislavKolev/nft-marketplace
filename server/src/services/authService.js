@@ -35,6 +35,6 @@ exports.login = async ({ email, password }) => {
 
 exports.register = (userData) => User.create(userData);
 
-exports.getOne = (userId) => User.findById(userId);
+exports.getOne = (userId) => User.findById(userId).populate('ownedNfts');
 
 exports.updateOne = (userId, userData) => User.findByIdAndUpdate(userId, userData);
