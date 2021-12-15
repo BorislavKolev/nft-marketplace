@@ -3,7 +3,6 @@ import NftCard from "./NftCard";
 const NftList = ({
     nfts
 }) => {
-    console.log(nfts);
     return (
         <>
              {nfts.length > 0

@@ -2,12 +2,15 @@ import { useState, useEffect } from 'react';
 import NftList from '../NftList';
 
 import * as nftService from '../../services/nftService';
+import * as authService from '../../services/authService';
+
 import { useAuthContext } from '../../contexts/AuthContext';
 
 const Profile = () => {
     const [ownedNfts, setOwnedNfts] = useState([]);
     const [createdNfts, setCreatedNfts] = useState([]);
     const [favouriteNfts, setFavouriteNfts] = useState([]);
+    const [balance, setBalance] = useState(0);
 
     const { user } = useAuthContext();
 
@@ -32,6 +35,15 @@ const Profile = () => {
             });
     }, []);
 
+    useEffect(() => {
+        authService.getOne(user._id)
+            .then(userResult => {
+                setBalance(userResult.balance);
+            });
+    }, []);
+
+    console.log(user);
+
     return (
         <div className="page-section border-top">
             <div className="container">
@@ -46,7 +58,7 @@ const Profile = () => {
                         <div className="post-comment-count ml-2">
                             <span className="icon">
                                 <span className="mai-cash-outline"></span>
-                            </span> <a><b>Balance:</b> {user.balance} ETH</a>
+                            </span> <a><b>Balance:</b> {balance} ETH</a>
                         </div>
                     </div>
                 </div>
