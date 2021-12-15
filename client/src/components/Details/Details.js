@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 
 import * as nftService from '../../services/nftService';
+import * as authService from '../../services/authService';
 
 import { useAuthContext } from '../../contexts/AuthContext';
 
@@ -69,8 +70,13 @@ const Details = () => {
               <div className="post-date">
                   <span className="icon">
                     <span className="mai-cash-outline"></span>
-                  </span> <a>Price: {nft.price} ETH</a>
+                  </span> <a><b>Price:</b> {nft.price} ETH</a>
                 </div>
+                {/* <div className="post-date">
+                  <span className="icon">
+                    <span className="mai-heart"></span>
+                  </span> <a><b>Favourites:</b> {nft.favourites.length}</a>
+                </div> */}
                
                 {user._id && (user._id == nft.owner
                             ? ownerButtons

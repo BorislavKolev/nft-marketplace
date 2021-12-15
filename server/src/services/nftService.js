@@ -20,7 +20,7 @@ exports.create = async (nftData) => {
         { runValidators: true }); 
 };
 
-exports.getAll = () => Nft.find().lean();
+exports.getAll = () => Nft.find({forSale: true}).lean();
 
 exports.getOne = (nftId) => Nft.findById(nftId).populate('favourites');
 

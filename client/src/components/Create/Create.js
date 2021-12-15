@@ -23,6 +23,7 @@ const Create = () => {
             owner: user._id,
             price,
             favourites: [],
+            forSale: true,
         }, user.accessToken)
             .then(result => {
                 navigate('/explore');
