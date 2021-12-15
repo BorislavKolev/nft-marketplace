@@ -51,4 +51,17 @@ router.get('/:userId/favouriteNfts', async (req, res) => {
     res.json({ nfts });
 });
 
+router.get('/:nftId/buy/:buyerId', async (req, res) => {
+     try {
+        await nftService.buy(req.params.nftId, req.params.buyerId);
+
+        res.json({ok: true});
+
+    } catch(err) {
+
+        res.json({error: err});
+    }
+
+});
+
 module.exports = router;

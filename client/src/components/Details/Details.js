@@ -30,6 +30,13 @@ const Details = () => {
         .then(x => navigate('/explore'));
   };
 
+  const onClickBuyHandler = (e) => {
+    e.preventDefault();
+
+    nftService.buy(nftId, user._id)
+      .then(x => navigate('/explore'));
+};
+
     const ownerButtons = (
       <>
           <Link to={`/edit/${nft._id}`} className="btn btn-outline border ml-1">Edit</Link>
@@ -39,8 +46,8 @@ const Details = () => {
 
   const userButtons = (
     <>
-         <a href="#" className="btn btn-primary border ml-1">Like</a>
-          <a href="#" className="btn btn-primary border ml-1">Buy</a>
+         {/* <a href="#" className="btn btn-primary border ml-1">Like</a> */}
+          <a href="#" className="btn btn-primary border ml-1" onClick={onClickBuyHandler}>Buy</a>
     </>
 );
 

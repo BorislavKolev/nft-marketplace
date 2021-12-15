@@ -49,3 +49,7 @@ export const getMyOwnedNfts = (userId) => request.get(`${baseUrl}/${userId}/owne
 export const getMyCreatedNfts = (userId) => request.get(`${baseUrl}/${userId}/createdNfts`);
 
 export const getMyFavouriteNfts = (userId) => request.get(`${baseUrl}/${userId}/favouriteNfts`);
+
+export const buy = async (nftId, buyerId) => {
+    await request.get(`${baseUrl}/${nftId}/buy/${buyerId}`)
+};

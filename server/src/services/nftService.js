@@ -54,13 +54,19 @@ exports.removeNftFromUserCollections = async (nftId) => {
     let creatorData = await creator.toObject();
     await authService.updateOne(creatorId, creatorData);
     //Removing NFT from favourites collections
-    for (const favId of favourites) {
-        let currentFavourite = await authService.getOne(favId);
-        const indexOfNftInFavourite = currentFavourite.favouriteNfts.indexOf(nftObjectId);
-        currentFavourite.favouriteNfts.splice(indexOfNftInFavourite, 1);
-        let favouriteData = await currentFavourite.toObject();
-        await authService.updateOne(favId, favouriteData);
-    };
+    if(favourites != null) {
+        console.log('tryies')
+        for (const favId of favourites) {
+            let currentFavourite = await authService.getOne(favId);
+            const indexOfNftInFavourite = currentFavourite.favouriteNfts.indexOf(nftObjectId);
+            currentFavourite.favouriteNfts.splice(indexOfNftInFavourite, 1);
+            let favouriteData = await currentFavourite.toObject();
+            await authService.updateOne(favId, favouriteData);
+        };
+    }
+      
+    
+   
 }
 
 exports.findNftsOwnedByUser = (userId) => Nft.find({owner: userId}).lean();
@@ -69,3 +75,39 @@ exports.findNftsCreatedByUser = (userId) => Nft.find({creator: userId}).lean();
 
 exports.findNftsFavouritedByUser = (userId) => Nft.find({favourites: {$in: [userId]}}).lean();
 
+
+exports.buy = async (nftId, buyerId) => {
+    try {
+        console.log('in buy backend ')
+        let nft = await Nft.findById(nftId).populate('favourites');
+        let nftData = await nft.toObject();
+        let ownerId = nftData.owner;
+
+        let buyerAsObjectId = mongoose.Types.ObjectId(buyerId);
+        nftData.owner = buyerAsObjectId;
+        nftData.forSale = false;
+        let nftOperation = await Nft.findByIdAndUpdate(nftId, nftData);
+        let nftObjectId = mongoose.Types.ObjectId(nftId);
+
+    
+        let owner = await authService.getOne(ownerId);
+        const indexOfNftInOwned = owner.ownedNfts.indexOf(nftObjectId);
+        owner.ownedNfts.splice(indexOfNftInOwned, 1);
+        let ownerData = await owner.toObject();
+        ownerData.balance += nftData.price;
+        await authService.updateOne(ownerId, ownerData);
+        console.log('seller')
+        console.log(ownerData)
+    
+        let buyer = await authService.getOne(buyerId);
+        buyer.ownedNfts.push(nftObjectId);
+        let buyerData = await buyer.toObject();
+        buyerData.balance -= nftData.price;
+        await authService.updateOne(buyerId, buyerData);
+        console.log('buyer')
+        console.log(buyerData)
+    } catch (error) {
+        console.log(error)
+    }
+  
+}
