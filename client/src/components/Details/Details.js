@@ -12,6 +12,8 @@ const Details = () => {
     const { user } = useAuthContext();
     const { nftId } = useParams();
     const [nft, setNft] = useState({});
+    const [balance, setBalance] = useState(0);
+
 
     useEffect(() => {
         nftService.getOne(nftId)
@@ -22,6 +24,13 @@ const Details = () => {
                 console.log(err);
             })
     }, []);
+
+    useEffect(() => {
+      authService.getOne(user._id)
+          .then(userResult => {
+              setBalance(userResult.balance);
+          });
+  }, []);
 
     const onClickDeleteHandler = (e) => {
       e.preventDefault();
@@ -47,7 +56,11 @@ const Details = () => {
   const userButtons = (
     <>
          {/* <a href="#" className="btn btn-primary border ml-1">Like</a> */}
-          <a href="#" className="btn btn-primary border ml-1" onClick={onClickBuyHandler}>Buy</a>
+         {balance >= nft.price
+                            ? <a href="#" className="btn btn-primary border ml-1" onClick={onClickBuyHandler}>Buy</a>
+                            : <p><b>Your balance ({balance} ETH) is not enough for purchasing this NFT!</b></p>
+                }
+          
     </>
 );
 

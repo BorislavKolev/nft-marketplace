@@ -69,13 +69,13 @@ const Profile = () => {
                 <div className="row my-5 card-blog-row">
                     <NftList nfts={ownedNfts} />
                 </div>
-                <div className="text-center wow fadeInUp">
+                {/* <div className="text-center wow fadeInUp">
                     <h2 className="title-section">{user.username}'s<span className="marked"> FAVOURITE </span>NFTs</h2>
                     <div className="divider mx-auto"></div>
                 </div>
                 <div className="row my-5 card-blog-row">
                     <NftList nfts={favouriteNfts} />
-                </div>
+                </div> */}
                 <div className="text-center wow fadeInUp">
                     <h2 className="title-section">{user.username}'s<span className="marked"> CREATED </span>NFTs</h2>
                     <div className="divider mx-auto"></div>

@@ -109,5 +109,7 @@ exports.buy = async (nftId, buyerId) => {
     } catch (error) {
         console.log(error)
     }
-  
 }
+
+exports.getLatest = () => Nft.find({forSale: true}).sort('-createdAt').limit(4).lean();
+

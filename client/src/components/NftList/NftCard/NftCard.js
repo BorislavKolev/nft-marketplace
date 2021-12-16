@@ -12,8 +12,8 @@ const NftCard = ({
               <img src={nft.imageUrl} alt="" />
             </div>
             <div className="entry-footer">
-              <div className="post-author">{nft.title}</div>
-              <a href="#" className="post-date">{nft.price} ETH</a>
+              <div><b>{nft.title}</b></div>
+              <a> <span className="mai-cash-outline"></span>{nft.price} ETH</a>
             </div>
           </div>          
           <div className="footer">

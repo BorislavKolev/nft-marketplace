@@ -64,4 +64,10 @@ router.get('/:nftId/buy/:buyerId', async (req, res) => {
 
 });
 
+router.get('/latest', async (req, res) => {
+    let nfts = await nftService.getLatest();
+
+    res.json({ nfts });
+});
+
 module.exports = router;
