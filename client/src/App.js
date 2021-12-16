@@ -14,10 +14,12 @@ import Edit from './components/Edit';
 import Profile from './components/Profile';
 import GuardedRoute from './components/Common/GuardedRoute';
 import PrivateRoute from './components/Common/PrivateRoute';
+import ErrorBoundary from './components/Common/ErrorBoundary';
 
 
 function App() {
   return (
+    <ErrorBoundary>
     <AuthProvider>
     <div>
       <Header />
@@ -39,6 +41,7 @@ function App() {
       <Footer />
     </div>
     </AuthProvider>
+    </ErrorBoundary>
   );
 }
 
