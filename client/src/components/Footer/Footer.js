@@ -1,3 +1,5 @@
+import './Header.css';
+
 const Footer = () => {
     return(
         <footer className="page-footer">

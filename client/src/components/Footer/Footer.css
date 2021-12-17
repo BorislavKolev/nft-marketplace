@@ -1,0 +1,25 @@
+
+.page-footer {
+    position: relative;
+    display: block;
+    padding-top: 80px;
+    padding-bottom: 16px;
+    background-color: #fff;
+    border-top: 1px solid #e9e8f5;
+  }
+  
+  .page-footer p a {
+    transition: color .2s ease;
+  }
+  
+  .page-footer h3,
+  .page-footer h4,
+  .page-footer h5 {
+    color: #645F88;
+    margin-bottom: 24px;
+    font-weight: 600;
+  }
+  
+  .page-footer p {
+    color: #898798;
+  }

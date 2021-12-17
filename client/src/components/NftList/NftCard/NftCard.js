@@ -1,5 +1,7 @@
 import { Link} from 'react-router-dom';
 
+import './NftCard.css';
+
 const NftCard = ({
     nft
 }) => {
