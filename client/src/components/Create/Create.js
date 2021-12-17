@@ -43,19 +43,19 @@ const Create = () => {
               <form method="POST" onSubmit={onNftCreate}>
                 <h5>Title</h5>
                 <div className="py-2">
-                  <input type='text' name='title' id='title' className="form-control" placeholder="'Crypto Funk'"/>
+                  <input type='text' name='title' id='title' className="form-control" placeholder="'Crypto Funk'" required/>
                 </div>
                 <h5>Description</h5>
                 <div className="py-2">
-                  <textarea type='text' name='description' id='description' className="form-control" placeholder="'This is very limited item'"/>
+                  <textarea type='text' name='description' id='description' className="form-control" placeholder="'This is very limited item'" required/>
                 </div>
                 <h5>Image Url</h5>
                 <div className="py-2">
-                  <textarea type='text' name='imageUrl' id='imageUrl' className="form-control" placeholder="'https://***.png'"/>
+                  <textarea type='text' name='imageUrl' id='imageUrl' className="form-control" placeholder="'https://***.png'" required/>
                 </div>
                 <h5>Price in ETH</h5>
                 <div className="py-2">
-                  <input type='number' name='price' id='price' className="form-control" min="0" step="any" placeholder="'0.5'"/>
+                  <input type='number' name='price' id='price' className="form-control" min="0" step="any" placeholder="'0.5'" required/>
                 </div>
                 <button type="submit" className="btn btn-primary rounded-pill mt-4">Create</button>
               </form>

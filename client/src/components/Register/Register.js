@@ -38,16 +38,16 @@ const Register = () => {
               
               <form method="POST" onSubmit={registerSubmitHandler}>
               <div className="py-2">
-                  <input type='text' name='username' id='username' className="form-control" placeholder="Username"/>
+                  <input type='text' name='username' id='username' className="form-control" placeholder="Username" required/>
                 </div>
                 <div className="py-2">
-                  <input type='text' name='email' id='email' className="form-control" placeholder="Email"/>
+                  <input type='text' name='email' id='email' className="form-control" placeholder="Email" required/>
                 </div>
                 <div className="py-2">
-                  <input type='password' name='password' id='password' className="form-control" placeholder="Password" />
+                  <input type='password' name='password' id='password' className="form-control" placeholder="Password" required/>
                 </div>
                 <div className="py-2">
-                  <input type='password' name='repassword' id='repassword' className="form-control" placeholder="Repeat Password" />
+                  <input type='password' name='repassword' id='repassword' className="form-control" placeholder="Repeat Password" required/>
                 </div>
                 <button type="submit" className="btn btn-primary rounded-pill mt-4">Register</button>
               </form>

@@ -42,10 +42,10 @@ const Login = () => {
             
             <form method="POST" onSubmit={onLoginHandler}>
               <div className="py-2">
-                <input type='text' name='email' id='email' className="form-control" placeholder="Email"/>
+                <input type='text' name='email' id='email' className="form-control" placeholder="Email" required/>
               </div>
               <div className="py-2">
-                <input type='password' name='password' id='password' className="form-control" placeholder="Password" />
+                <input type='password' name='password' id='password' className="form-control" placeholder="Password" required/>
               </div>
               <button type="submit" className="btn btn-primary rounded-pill mt-4">Login</button>
             </form>
